@@ -1,0 +1,63 @@
+[
+  {
+    "id": "government-order-medicare-01",
+    "kind": "orderSteps",
+    "topic": "government",
+    "difficulty": 2,
+    "title": "If Medicare calls demanding your card number",
+    "prompt": "A caller says they are from Medicare and your benefits will be cancelled unless you give your card number. Put these steps in order:",
+    "steps": [
+      "Look up the official Medicare phone number on your red, white, and blue card or at Medicare.gov.",
+      "Hang up immediately. Government agencies do not call out of the blue to threaten benefits.",
+      "Call official Medicare directly if you have any genuine concerns about your account.",
+      "Report the scam phone number to the Federal Trade Commission."
+    ],
+    "correctOrder": [1, 0, 2, 3],
+    "whyFirstStepMatters": "Hanging up prevents you from accidentally revealing sensitive numbers under pressure. Government workers will never threaten you or demand immediate payment over the phone.",
+    "explanation": "Medicare and Social Security communicate primarily through official mail. They never call to threaten suspension of benefits or demand payment over the phone.",
+    "takeaways": [
+      "Medicare never calls unexpectedly demanding card numbers.",
+      "Hang up and call the number on your official card."
+    ]
+  },
+  {
+    "id": "government-irs-tax-01",
+    "kind": "redflag",
+    "topic": "government",
+    "difficulty": 1,
+    "title": "Text threatening immediate IRS arrest warrant",
+    "channel": "sms",
+    "from": "+1 (555) 0163",
+    "segments": [
+      {
+        "text": "INTERNAL REVENUE SERVICE LEGAL NOTICE: "
+      },
+      {
+        "text": "Your tax file shows an unpaid delinquent assessment of $1,840. ",
+        "flag": {
+          "id": "f-irs-text",
+          "reason": "The IRS contacts taxpayers by official postal mail, never by unsolicited text messages."
+        }
+      },
+      {
+        "text": "A federal arrest warrant has been signed and local deputies will visit your residence within 2 hours. ",
+        "flag": {
+          "id": "f-police-threat",
+          "reason": "The IRS cannot and will not dispatch local police to arrest citizens over tax disputes."
+        }
+      },
+      {
+        "text": "To cancel the warrant, settle immediately at irs-tax-settlement-gov.com or call our field desk.",
+        "flag": {
+          "id": "f-fake-domain",
+          "reason": "All authentic IRS websites end strictly in .gov, never in .com."
+        }
+      }
+    ],
+    "explanation": "The IRS never demands immediate payment over the phone or text, and never threatens immediate arrest by local police. All legitimate IRS notices arrive through the U.S. Mail.",
+    "takeaways": [
+      "The IRS sends letters by postal mail, never text messages.",
+      "Real government agencies never threaten immediate arrest over text."
+    ]
+  }
+]

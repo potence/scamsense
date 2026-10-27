@@ -1,0 +1,231 @@
+[
+  {
+    "id": "phone-techsupport-01",
+    "kind": "callbranch",
+    "topic": "popups",
+    "difficulty": 1,
+    "title": "A call about a virus",
+    "callerLabel": "Unknown number (800) 555-0142",
+    "start": "n1",
+    "nodes": [
+      {
+        "id": "n1",
+        "transcript": "Hello, this is Daniel from Northwind Tech Support. We detected a serious virus on your computer. I need you to stay on the line.",
+        "audio": "call-phone-techsupport-01-n1.mp3",
+        "choices": [
+          { "label": "Ask which computer and how they know", "next": "n2", "outcome": "neutral", "feedback": "Asking questions is okay, but notice they called you out of the blue." },
+          { "label": "Do what they say", "next": "n3", "outcome": "risky", "feedback": "This is where scammers want you: following their steps." },
+          { "label": "Hang up", "next": "end-safe", "outcome": "safe", "feedback": "Good move. You don't owe a surprise caller your time." }
+        ]
+      },
+      {
+        "id": "n2",
+        "transcript": "Our system flagged it. For security, I will need remote access right now. It only takes a minute.",
+        "audio": "call-phone-techsupport-01-n2.mp3",
+        "choices": [
+          { "label": "Allow access", "next": "end-scammed", "outcome": "risky", "feedback": "Remote access lets a stranger control your computer." },
+          { "label": "Say no and hang up", "next": "end-safe", "outcome": "safe", "feedback": "Exactly right. Never let a caller into your computer." }
+        ]
+      },
+      {
+        "id": "n3",
+        "transcript": "Good. Now please open your browser and go to the address I give you.",
+        "audio": "call-phone-techsupport-01-n3.mp3",
+        "choices": [
+          { "label": "Follow the instructions", "next": "end-scammed", "outcome": "risky", "feedback": "The address would install a program that lets them in." },
+          { "label": "Stop and hang up", "next": "end-partial", "outcome": "safe", "feedback": "Good recovery. It's never too late to hang up." }
+        ]
+      },
+      {
+        "id": "end-safe",
+        "transcript": "The call is over.",
+        "end": { "result": "safe", "summary": "Real companies don't call you about viruses. Hanging up was exactly right." }
+      },
+      {
+        "id": "end-partial",
+        "transcript": "The call is over.",
+        "end": { "result": "partial", "summary": "You stopped before any harm was done. Next time, you can hang up as soon as a stranger says your computer has a virus." }
+      },
+      {
+        "id": "end-scammed",
+        "transcript": "The caller now controls your screen.",
+        "end": { "result": "scammed", "summary": "Giving remote access lets them see and take things. If this happens, turn off the internet and ask someone you trust for help. Anyone can be fooled; scammers are professionals." }
+      }
+    ],
+    "explanation": "Tech companies don't call you to say your computer has a virus. The caller creates panic so you follow their steps without thinking. Hanging up is always allowed.",
+    "takeaways": [
+      "Real tech companies don't make surprise virus calls.",
+      "Never give a caller remote access to your computer."
+    ]
+  },
+  {
+    "id": "phone-grandchild-01",
+    "kind": "callbranch",
+    "topic": "emergency",
+    "difficulty": 2,
+    "title": "A grandchild in trouble?",
+    "callerLabel": "Unknown number (800) 555-0163",
+    "start": "n1",
+    "nodes": [
+      {
+        "id": "n1",
+        "transcript": "H-hey.. it's me. I'm in trouble. I had a car accident and I need help. Please don't tell Mom.",
+        "audio": "call-phone-grandchild-01-n1.mp3",
+        "choices": [
+          { "label": "Ask a question only your grandchild would know", "next": "n2", "outcome": "safe", "feedback": "Smart. A private question is a great way to check." },
+          { "label": "Ask what they need", "next": "n3", "outcome": "risky", "feedback": "It's natural to want to help, but the caller hasn't proven who they are." }
+        ]
+      },
+      {
+        "id": "n2",
+        "transcript": "There's no time for that! I'm scared. Please, I just need money fast.",
+        "audio": "call-phone-grandchild-01-n2.mp3",
+        "choices": [
+          { "label": "Hang up and call your grandchild's real number", "next": "end-safe", "outcome": "safe", "feedback": "Perfect. Calling them back on a number you know is the best check." },
+          { "label": "Send the money anyway", "next": "end-scammed", "outcome": "risky", "feedback": "They dodged your question. That's a big warning sign." }
+        ]
+      },
+      {
+        "id": "n3",
+        "transcript": "I need two thousand dollars for bail. Go to the store and buy gift cards, then read me the numbers. And don't tell anyone.",
+        "audio": "call-phone-grandchild-01-n3.mp3",
+        "choices": [
+          { "label": "Buy the gift cards", "next": "end-scammed", "outcome": "risky", "feedback": "Courts and police never take gift cards. Only scammers ask for them." },
+          { "label": "Say you'll call back and hang up", "next": "n4", "outcome": "safe", "feedback": "Good. Taking a pause breaks the scammer's pressure." }
+        ]
+      },
+      {
+        "id": "n4",
+        "transcript": "You call your grandchild on the number you have saved. They answer from home, safe and confused.",
+        "choices": [
+          { "label": "Tell a family member what happened", "next": "end-partial", "outcome": "safe", "feedback": "Telling family helps protect everyone." }
+        ]
+      },
+      {
+        "id": "end-safe",
+        "transcript": "The call is over.",
+        "end": { "result": "safe", "summary": "You checked before acting. Scammers can fake a voice and a story, but they can't answer the questions only family knows." }
+      },
+      {
+        "id": "end-partial",
+        "transcript": "Your family is glad you checked.",
+        "end": { "result": "partial", "summary": "You stopped in time. Next time, try asking a private question right away, before the caller gets to the money part." }
+      },
+      {
+        "id": "end-scammed",
+        "transcript": "The caller hangs up as soon as you read the numbers.",
+        "end": { "result": "scammed", "summary": "Gift card money is very hard to get back. If this happens, call the store or card company right away and report it. Anyone can be fooled; scammers are professionals." }
+      }
+    ],
+    "explanation": "Scammers pretend to be a family member in a panic and ask you to keep it secret. Secrecy and gift cards are two big warning signs. Hang up and call your family member on a number you already know.",
+    "takeaways": [
+      "\"Don't tell anyone\" is a warning sign.",
+      "No real emergency is paid with gift cards.",
+      "Call your family back on a number you know."
+    ]
+  },
+  {
+    "id": "phone-benefits-01",
+    "kind": "callbranch",
+    "topic": "government",
+    "difficulty": 3,
+    "title": "A call about your benefits",
+    "callerLabel": "Unknown number (800) 555-0171",
+    "start": "n1",
+    "nodes": [
+      {
+        "id": "n1",
+        "transcript": "This is Officer Grant from the Federal Benefits Office. There is a problem with your account. Your benefits will be stopped today unless we verify your identity.",
+        "audio": "call-phone-benefits-01-n1.mp3",
+        "choices": [
+          {
+            "label": "Ask for their name and number so you can call back",
+            "next": "n2",
+            "outcome": "neutral",
+            "feedback": "Asking to call back is a good instinct. Watch how they react."
+          },
+          {
+            "label": "Give your ID number to verify",
+            "next": "n3",
+            "outcome": "risky",
+            "feedback": "Never give ID numbers to someone who called you."
+          },
+          {
+            "label": "Hang up and call the number on your benefits letter",
+            "next": "end-safe",
+            "outcome": "safe",
+            "feedback": "Exactly right. Use a number you already trust."
+          }
+        ]
+      },
+      {
+        "id": "n2",
+        "transcript": "There is no time to call back. If you hang up, your benefits will be cancelled. You can pay a two hundred dollar fee with gift cards to keep them active.",
+        "audio": "call-phone-benefits-01-n2.mp3",
+        "choices": [
+          {
+            "label": "Hang up and call the official number on your card or letter",
+            "next": "end-safe",
+            "outcome": "safe",
+            "feedback": "Good. A real office is happy for you to call back."
+          },
+          {
+            "label": "Agree to buy gift cards",
+            "next": "end-scammed",
+            "outcome": "risky",
+            "feedback": "No government office takes gift cards. Only scammers ask for them."
+          }
+        ]
+      },
+      {
+        "id": "n3",
+        "transcript": "Thank you. Now, to keep your benefits active, there is a two hundred dollar fee. Please pay it with gift cards today.",
+        "audio": "call-phone-benefits-01-n3.mp3",
+        "choices": [
+          {
+            "label": "Pay with gift cards",
+            "next": "end-scammed",
+            "outcome": "risky",
+            "feedback": "Gift cards are a sure sign of a scam."
+          },
+          {
+            "label": "Refuse and hang up",
+            "next": "end-partial",
+            "outcome": "safe",
+            "feedback": "Good recovery. It's never too late to hang up."
+          }
+        ]
+      },
+      {
+        "id": "end-safe",
+        "transcript": "The call is over.",
+        "end": {
+          "result": "safe",
+          "summary": "Government offices don't threaten to cut off your benefits over the phone, and they never ask for gift cards. Calling the number on your own card or letter was exactly right."
+        }
+      },
+      {
+        "id": "end-partial",
+        "transcript": "The call is over.",
+        "end": {
+          "result": "partial",
+          "summary": "You stopped before paying, which is great. You did share your ID number, so call the real office using the number on your card or letter and tell them what happened."
+        }
+      },
+      {
+        "id": "end-scammed",
+        "transcript": "The caller hangs up after you read the gift card numbers.",
+        "end": {
+          "result": "scammed",
+          "summary": "If this happens, contact the gift card company right away and report the scam. Anyone can be fooled; scammers are professionals."
+        }
+      }
+    ],
+    "explanation": "Scammers pretend to be from the government and threaten to take away something you depend on. Fear makes it hard to think. Real offices send letters, give you time, and never ask for gift cards.",
+    "takeaways": [
+      "Threats to cut off benefits are a warning sign.",
+      "No government office takes gift cards.",
+      "Call back on the number from your card or letter."
+    ]
+  }
+]

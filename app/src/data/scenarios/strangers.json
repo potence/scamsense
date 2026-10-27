@@ -1,0 +1,101 @@
+[
+  {
+    "id": "strangers-wrong-number-01",
+    "kind": "redflag",
+    "topic": "strangers",
+    "difficulty": 1,
+    "title": "A friendly wrong-number text",
+    "channel": "sms",
+    "from": "+1 (555) 0184",
+    "segments": [
+      {
+        "text": "Hi David, are we still meeting at the tennis club at three? "
+      },
+      {
+        "text": "Oh sorry, wrong number! You seem very kind though, my name is Linda. ",
+        "flag": {
+          "id": "f-friendly",
+          "reason": "Scammers pretend to text the wrong person on purpose to start a casual conversation."
+        }
+      },
+      {
+        "text": "Do you live around here? I love chatting with new friends online.",
+        "flag": {
+          "id": "f-chat",
+          "reason": "They try to build trust over days or weeks before asking for money or pitching fake investments."
+        }
+      }
+    ],
+    "explanation": "Wrong-number scams start with a polite text to get you talking. Once a connection is made, the stranger turns to money, sob stories, or fake investments. Never reply to strangers who text you by mistake.",
+    "takeaways": [
+      "Do not reply to texts from strangers.",
+      "Block and delete unexpected friendly messages."
+    ]
+  },
+  {
+    "id": "strangers-friendly-chat-01",
+    "kind": "redflag",
+    "topic": "strangers",
+    "difficulty": 2,
+    "title": "Online acquaintance pitching a secret investment",
+    "channel": "sms",
+    "from": "+1 (555) 0147",
+    "segments": [
+      {
+        "text": "Good morning! It has been so lovely chatting with you this past week. "
+      },
+      {
+        "text": "My uncle who works as a chief investment director showed me a private trading portal with guaranteed 15% daily returns. ",
+        "flag": {
+          "id": "f-guaranteed-returns",
+          "reason": "There is no such thing as a guaranteed high return with zero risk. Promises of guaranteed profits are always fraudulent."
+        }
+      },
+      {
+        "text": "I already withdrew $6,000 this morning! I can guide you if you send $500 to my special wallet link today. ",
+        "flag": {
+          "id": "f-send-funds",
+          "reason": "The stranger built a friendly connection solely to steal your money through a counterfeit investment website."
+        }
+      },
+      {
+        "text": "Let me know within the hour before the European markets close!"
+      }
+    ],
+    "explanation": "This is known as a relationship-investment scam. Criminals spend days acting as friendly pen pals before introducing a fraudulent crypto or trading platform. Never invest funds through links provided by strangers.",
+    "takeaways": [
+      "Never invest money through websites recommended by strangers.",
+      "Any claim of guaranteed high returns is a scam."
+    ]
+  },
+  {
+    "id": "strangers-job-offer-01",
+    "kind": "choicepair",
+    "topic": "strangers",
+    "difficulty": 2,
+    "title": "Evaluating a work-from-home job offer",
+    "prompt": "You receive a text offering a $45/hour work-from-home administrative job without an interview. Which response protects you?",
+    "options": [
+      {
+        "id": "a",
+        "label": "Delete the text, because real companies do not hire strangers via random text messages",
+        "note": "Safe skepticism"
+      },
+      {
+        "id": "b",
+        "label": "Accept the job, deposit the $2,500 check they mail you for home office equipment, and wire the leftover money back",
+        "note": "They say the vendor needs immediate payment"
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "Correct: Legitimate employers conduct formal interviews and do not send unsolicited job offers with high salaries via text message.",
+      "b": "Dangerous: The check is counterfeit. Your bank will make funds available initially, but when the fake check bounces a week later, you must repay the bank every dollar you wired."
+    },
+    "explanation": "Fake check scams frequently disguise themselves as work-from-home job offers. When a counterfeit check bounces, the victim is held financially responsible by their bank for all withdrawn or wired money.",
+    "takeaways": [
+      "Never deposit a check from an employer you never met in person.",
+      "Real employers send equipment directly, never money to wire."
+    ]
+  }
+]

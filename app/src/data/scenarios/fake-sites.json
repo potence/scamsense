@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fake-sites-bank-address-01",
+    "kind": "choicepair",
+    "topic": "fake-sites",
+    "difficulty": 1,
+    "title": "Which bank website is real?",
+    "prompt": "Your bank is Bluebird Bank. Which address is the real bank website?",
+    "options": [
+      { "id": "a", "label": "bluebirdbank.com" },
+      { "id": "b", "label": "bluebirdbank.com.secure-login.net" }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "This is the real one. The main name right before .com is bluebirdbank.",
+      "b": "This is a fake. Read the end of the address: it really belongs to secure-login.net, not your bank."
+    },
+    "explanation": "Scammers put a real company's name at the start of a fake address. What counts is the last name before the first slash, like bluebirdbank.com. When in doubt, type your bank's address yourself or use a saved bookmark.",
+    "takeaways": [
+      "Read the address from the end of the main name.",
+      "Type the address yourself or use a bookmark."
+    ]
+  },
+  {
+    "id": "fake-sites-lookalike-shop-01",
+    "kind": "choicepair",
+    "topic": "fake-sites",
+    "difficulty": 2,
+    "title": "Spot the swapped letters",
+    "prompt": "You want to shop at Maple Market. Which address is the real store?",
+    "options": [
+      { "id": "a", "label": "maplernarket.com", "note": "Look closely at the letters." },
+      { "id": "b", "label": "maplemarket.com" }
+    ],
+    "correctId": "b",
+    "reasons": {
+      "a": "This is a look-alike. The letters 'r' and 'n' together look like an 'm' at a glance.",
+      "b": "This is the real one. It spells maplemarket exactly."
+    },
+    "explanation": "Fake shops copy a real store's name with one or two letters changed. They often show up in ads with prices that seem too good to be true. Slow down and read the address letter by letter.",
+    "takeaways": [
+      "Look-alike addresses swap or add letters.",
+      "Deals that seem too good to be true are a warning sign."
+    ]
+  },
+  {
+    "id": "fake-sites-https-lock-01",
+    "kind": "choicepair",
+    "topic": "fake-sites",
+    "difficulty": 3,
+    "title": "Does the lock mean it's safe?",
+    "prompt": "Both pages show a lock icon next to the address. Your bank is Bluebird Bank. Which page should you trust?",
+    "options": [
+      {
+        "id": "a",
+        "label": "bluebirdbank.com",
+        "note": "Shows a lock icon."
+      },
+      {
+        "id": "b",
+        "label": "bluebird-bank-online-help.com",
+        "note": "Shows a lock icon."
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "This is the real one. The address is your bank's real name.",
+      "b": "The lock is real, but the site is fake. Scammers can get a lock for any site they make. The address is not your bank."
+    },
+    "explanation": "The lock icon only means the connection is private. It does not mean the website is honest. Always check the address itself, or use a bookmark you saved.",
+    "takeaways": [
+      "A lock icon does not mean a site is safe.",
+      "Check the address, not just the lock."
+    ]
+  },
+  {
+    "id": "fake-sites-login-url-01",
+    "kind": "choicepair",
+    "topic": "fake-sites",
+    "difficulty": 2,
+    "title": "Subdomains versus imposter domains",
+    "prompt": "You want to log into your online bank account. Which website address is legitimate?",
+    "options": [
+      {
+        "id": "a",
+        "label": "online.bluebirdbank.com",
+        "note": "Subdomain before bank name"
+      },
+      {
+        "id": "b",
+        "label": "bluebirdbank.account-security-update.com",
+        "note": "Bank name placed at beginning"
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "Correct: Look directly before .com: the domain is bluebirdbank.com. Prefixes like 'online.' or 'secure.' in front of the real bank name are normal.",
+      "b": "Imposter: The true domain right before .com is account-security-update.com. Scammers place the bank name first to fool people who only glance at the start of the address."
+    },
+    "explanation": "Always inspect the words immediately before the `.com` or `.org`. Scammers frequently put a trusted name like 'bluebirdbank' at the start of their own domain to trick your eyes.",
+    "takeaways": [
+      "Read web addresses from right to left right before the .com.",
+      "Never trust a web address just because a bank name appears at the very beginning."
+    ]
+  }
+]

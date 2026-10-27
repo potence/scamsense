@@ -1,0 +1,290 @@
+[
+  {
+    "id": "phishing",
+    "title": "Phishing emails and texts",
+    "summary": "Fake messages that pretend to be your bank, a store, or a delivery company.",
+    "teach": [
+      "The sender's address doesn't match the real company.",
+      "The message rushes or scares you: \"act now\" or \"your account will be closed\".",
+      "It has a link or attachment you weren't expecting."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "don't tap links or open attachments."
+      },
+      {
+        "label": "Spot",
+        "text": "look closely at who sent it."
+      },
+      {
+        "label": "Block",
+        "text": "delete the message and call using a number you already trust."
+      }
+    ]
+  },
+  {
+    "id": "fake-sites",
+    "title": "Fake websites",
+    "summary": "Look-alike websites that copy real banks and stores.",
+    "teach": [
+      "Read the address from the end of the main name, just before the first slash.",
+      "Look-alike addresses swap or add letters.",
+      "Type the address yourself or use a saved bookmark."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "don't type passwords or card numbers."
+      },
+      {
+        "label": "Spot",
+        "text": "read the web address letter by letter from the end."
+      },
+      {
+        "label": "Block",
+        "text": "close the tab and type the address yourself or use a saved bookmark."
+      }
+    ]
+  },
+  {
+    "id": "quishing",
+    "title": "QR code scams",
+    "summary": "QR codes that lead to fake payment or sign-in pages.",
+    "teach": [
+      "A QR code is just a link in disguise.",
+      "Scammers put stickers over real QR codes.",
+      "Check the address your phone shows before you open it."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "don't scan surprise codes."
+      },
+      {
+        "label": "Spot",
+        "text": "check if a sticker was added later, and preview the web address."
+      },
+      {
+        "label": "Block",
+        "text": "pay through an official app, a card reader, or a trusted website."
+      }
+    ]
+  },
+  {
+    "id": "popups",
+    "title": "Scary pop-ups",
+    "summary": "Fake warnings on your screen that say your computer has a virus.",
+    "teach": [
+      "Real warnings never give you a phone number to call.",
+      "A web page can't scan your computer for viruses.",
+      "Close the window or restart instead of clicking or calling."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "don't call the phone number on the screen."
+      },
+      {
+        "label": "Spot",
+        "text": "real security warnings never tell you to call a stranger."
+      },
+      {
+        "label": "Block",
+        "text": "close the browser tab or restart your device."
+      }
+    ]
+  },
+  {
+    "id": "payment",
+    "title": "Gift cards, wires and crypto",
+    "summary": "Demands to pay in unusual ways that cannot be reversed.",
+    "teach": [
+      "Anyone who tells you to pay with gift cards is a scammer.",
+      "Wire transfers and crypto payments cannot be cancelled or refunded.",
+      "They tell you what to say to the cashier or bank teller."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "never buy gift cards or send a wire to resolve a problem."
+      },
+      {
+        "label": "Spot",
+        "text": "real businesses and agencies never demand payment in gift cards or crypto."
+      },
+      {
+        "label": "Block",
+        "text": "refuse their payment instructions and speak with someone you trust in person."
+      }
+    ]
+  },
+  {
+    "id": "emergency",
+    "title": "Family emergency calls",
+    "summary": "Urgent calls claiming a grandchild or relative is hurt, arrested, or in trouble.",
+    "teach": [
+      "The caller sounds panicked and begs you not to tell anyone in the family.",
+      "They demand bail money, hospital fees, or lawyer fees right away.",
+      "They may use an AI clone of your loved one's voice."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "take a slow breath. Panic is their main weapon."
+      },
+      {
+        "label": "Spot",
+        "text": "secrecy and extreme rush are signs of a family emergency scam."
+      },
+      {
+        "label": "Block",
+        "text": "hang up and call your relative directly on their normal number."
+      }
+    ]
+  },
+  {
+    "id": "government",
+    "title": "Government and Medicare callers",
+    "summary": "Callers pretending to be Social Security, Medicare, or law enforcement.",
+    "teach": [
+      "They threaten arrest, frozen benefits, or legal action if you don't pay.",
+      "They ask for your Medicare number, Social Security number, or bank details.",
+      "They claim your number or card has been suspended."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "hang up the phone. Government agencies do not call to threaten you."
+      },
+      {
+        "label": "Spot",
+        "text": "Medicare and Social Security always contact you by official mail first."
+      },
+      {
+        "label": "Block",
+        "text": "look up the official agency number yourself if you have concerns."
+      }
+    ]
+  },
+  {
+    "id": "strangers",
+    "title": "Messages from strangers",
+    "summary": "Friendly wrong-number texts, online friends, and unsolicited investment tips.",
+    "teach": [
+      "A friendly stranger texts by \"mistake\" and tries to start a casual conversation.",
+      "After building trust, they bring up an amazing investment or crypto opportunity.",
+      "They ask you to move your conversation to a different chat app."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "do not reply to friendly texts from numbers you do not know."
+      },
+      {
+        "label": "Spot",
+        "text": "anyone online offering guaranteed investment returns is trying to steal your money."
+      },
+      {
+        "label": "Block",
+        "text": "block the sender's number and delete the conversation."
+      }
+    ]
+  },
+  {
+    "id": "prizes",
+    "title": "Prizes, charities and sweepstakes",
+    "summary": "Notices claiming you won a lottery or sweepstakes you never entered.",
+    "teach": [
+      "You are told you won a contest, lottery, or sweepstakes you never entered.",
+      "They insist you must pay taxes, shipping, or fees before receiving your prize.",
+      "They push you to donate immediately to an emotional or unfamiliar charity."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "remember that you cannot win a contest or lottery you never entered."
+      },
+      {
+        "label": "Spot",
+        "text": "if you have to pay money to collect a prize, it is a scam."
+      },
+      {
+        "label": "Block",
+        "text": "delete the message and donate only directly to established charities you choose."
+      }
+    ]
+  },
+  {
+    "id": "shopping",
+    "title": "Shopping and delivery scams",
+    "summary": "Fake online store deals, delivery problem alerts, and marketplace tricks.",
+    "teach": [
+      "Popular items are advertised at impossibly low prices on unfamiliar websites.",
+      "A text says a delivery is held until you pay a small fee or update your address.",
+      "A buyer or seller insists on paying outside the official marketplace system."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "do not click links in unexpected package delivery notices."
+      },
+      {
+        "label": "Spot",
+        "text": "prices far below retail on unknown websites usually mean fake goods or theft."
+      },
+      {
+        "label": "Block",
+        "text": "track your packages directly through the seller's official website."
+      }
+    ]
+  },
+  {
+    "id": "credentials",
+    "title": "Passwords and verification codes",
+    "summary": "Tricks to get you to hand over one-time security codes, passwords, or PINs.",
+    "teach": [
+      "A caller or message asks you to read back a six-digit code sent to your phone.",
+      "The message claims your account will be locked unless you verify your password.",
+      "They pretend to be fraud security while secretly attempting to log into your account."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "never read or type a verification code for anyone who contacts you."
+      },
+      {
+        "label": "Spot",
+        "text": "one-time codes are secret keys for you alone; companies never ask for them."
+      },
+      {
+        "label": "Block",
+        "text": "hang up and change your password on the official website if worried."
+      }
+    ]
+  },
+  {
+    "id": "recovery",
+    "title": "If you think you've been scammed",
+    "summary": "Clear, calm steps to take right away to protect your accounts and money.",
+    "teach": [
+      "Acting in the first hour can stop bank transfers and prevent further loss.",
+      "Tell someone you trust right away; feeling embarrassed only helps the scammer.",
+      "Beware of \"recovery services\" that promise to get your lost money back for a fee."
+    ],
+    "safeMove": [
+      {
+        "label": "Stop",
+        "text": "cut off contact with the scammer immediately and take a calm breath."
+      },
+      {
+        "label": "Spot",
+        "text": "anyone charging an upfront fee to recover stolen funds is a recovery scammer."
+      },
+      {
+        "label": "Block",
+        "text": "call your bank's official fraud department immediately and report to the FTC."
+      }
+    ]
+  }
+]

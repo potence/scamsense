@@ -1,0 +1,63 @@
+[
+  {
+    "id": "emergency-order-grandchild-01",
+    "kind": "orderSteps",
+    "topic": "emergency",
+    "difficulty": 2,
+    "title": "If someone calls claiming your grandchild is in jail",
+    "prompt": "A weeping caller says your grandchild was arrested and needs bail money wired secretly. Put these steps in order:",
+    "steps": [
+      "Hang up the call to break their emotional panic and pressure.",
+      "Call your grandchild directly on their normal cell phone number.",
+      "If they don't answer, call their parents or another relative to check.",
+      "Never wire money or send gift cards to a stranger claiming to be a lawyer or police officer."
+    ],
+    "correctOrder": [0, 1, 2, 3],
+    "whyFirstStepMatters": "Hanging up breaks the artificial panic. Scammers rely on keeping you on the line so you cannot speak to your family and discover the truth.",
+    "explanation": "Family emergency scams succeed by keeping grandparents in a state of terror. Hanging up and calling your grandchild directly almost always reveals they are safe at school or work.",
+    "takeaways": [
+      "Always hang up and call your relative directly.",
+      "Never let panic rush you into sending money."
+    ]
+  },
+  {
+    "id": "emergency-accident-wire-01",
+    "kind": "redflag",
+    "topic": "emergency",
+    "difficulty": 2,
+    "title": "Text claiming your nephew is in the emergency room",
+    "channel": "sms",
+    "from": "+1 (555) 0184",
+    "segments": [
+      {
+        "text": "URGENT NOTICE: This is Nurse Martinez at the trauma center. "
+      },
+      {
+        "text": "Your nephew Alex was brought into the emergency room following a serious car accident and requires immediate care. ",
+        "flag": {
+          "id": "f-trauma-panic",
+          "reason": "Scammers fabricate extreme bodily injury to trigger panic and bypass your normal caution."
+        }
+      },
+      {
+        "text": "The hospital requires an immediate medical deposit of $2,400 before the surgical suite can be opened. ",
+        "flag": {
+          "id": "f-deposit-demand",
+          "reason": "Emergency rooms in the United States treat life-threatening injuries immediately and never demand text payment before operating."
+        }
+      },
+      {
+        "text": "Send the funds via digital transfer to billing@county-trauma-care.org right now. Do not call his mother as she is not at home.",
+        "flag": {
+          "id": "f-isolate-family",
+          "reason": "Telling you not to call family members is a deliberate tactic to keep you isolated from the truth."
+        }
+      }
+    ],
+    "explanation": "No legitimate emergency medical facility demands cash transfers or app payments over SMS before treating emergency patients. Always call your family member or their immediate relatives on their real phone numbers.",
+    "takeaways": [
+      "Hospitals never demand digital transfers by text before surgery.",
+      "Call family directly on their known numbers to verify emergencies."
+    ]
+  }
+]

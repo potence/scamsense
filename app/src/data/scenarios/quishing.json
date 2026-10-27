@@ -1,0 +1,155 @@
+[
+  {
+    "id": "quishing-parking-meter-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 1,
+    "title": "A QR code on a parking meter",
+    "scene": "You park downtown. The meter has a QR code sticker that says 'Scan to pay'. The sticker looks a little crooked, and there is another code printed on the meter underneath it.",
+    "clues": [
+      "The sticker is placed on top of another code. Scammers cover real codes with their own.",
+      "It is crooked and looks added later, not printed with the meter.",
+      "A safer way is to pay with coins, a card at the meter, or the city's official parking app you already have."
+    ],
+    "correct": "skip",
+    "explanation": "A QR code is just a link in disguise. You can't tell where it goes by looking at it. Fake stickers on parking meters send people to fake payment pages that steal card numbers.",
+    "takeaways": [
+      "A QR code is a hidden link.",
+      "Watch for stickers placed over real codes."
+    ]
+  },
+  {
+    "id": "quishing-restaurant-menu-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 2,
+    "title": "A menu QR code at your table",
+    "scene": "You sit down at a restaurant you know. The QR code for the menu is printed on the restaurant's own table card, with its logo. A server tells you it opens the menu. When you scan, your phone shows a preview address with the restaurant's name.",
+    "clues": [
+      "The code is printed on the restaurant's own card, not a sticker.",
+      "A staff member told you what it is for.",
+      "Your phone showed the address before opening it, and it matched the restaurant."
+    ],
+    "correct": "scan",
+    "explanation": "Not every QR code is a scam. This one comes from a place you trust, a person confirmed it, and you checked the address before opening. Even so, a menu should never ask for your card number or password.",
+    "takeaways": [
+      "Check who put the code there.",
+      "Look at the address preview before opening.",
+      "A menu should never ask for passwords or card numbers."
+    ]
+  },
+  {
+    "id": "quishing-package-email-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 2,
+    "title": "A QR code in a delivery email",
+    "scene": "You get an email saying a package couldn't be delivered. You don't remember ordering anything. The email shows a QR code and says 'Scan with your phone to reschedule delivery'.",
+    "clues": [
+      "You weren't expecting a package.",
+      "A QR code in an email hides the real link, so you can't read the address before you scan.",
+      "If you are expecting a package, check the tracking on the store's own website or app."
+    ],
+    "correct": "skip",
+    "explanation": "Scammers put QR codes in emails because the hidden link is harder to check. Scanning it on your phone can open a fake page that asks for your card or password. When in doubt, skip the code and check your orders yourself.",
+    "takeaways": [
+      "Skip QR codes in surprise emails.",
+      "Check deliveries on the store's own site or app."
+    ]
+  },
+  {
+    "id": "quishing-utility-bill-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 1,
+    "title": "A QR code on your printed water bill",
+    "scene": "Your monthly water bill arrives in your physical postal mailbox inside an official utility envelope. The paper bill has your correct address and account number, and shows a printed QR code in the payment box that reads: 'Scan to pay online at greenfieldwater.gov'.",
+    "clues": [
+      "The statement arrived in your physical postal mailbox inside an official utility envelope with your verified account details.",
+      "The QR code is printed directly onto the bill paper, not a sticker placed on top.",
+      "Your phone camera preview displays the official municipal website greenfieldwater.gov."
+    ],
+    "correct": "scan",
+    "explanation": "Printed QR codes on physical bills received through postal mail from your utility providers are standard and safe. Always make sure your phone's link preview matches the utility's official website before opening.",
+    "takeaways": [
+      "Printed codes on official mail statements you receive are safe.",
+      "Always check the website address preview on your phone before tapping open."
+    ]
+  },
+  {
+    "id": "quishing-parking-sticker-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 2,
+    "title": "A peeling sticker on a municipal parking sign",
+    "scene": "You park in a public downtown parking space. Next to the official parking instructions, someone has affixed a shiny paper sticker reading: 'QUICK PARK - SCAN TO PAY VIA PHONE' over the metal sign plate.",
+    "clues": [
+      "The sticker is peeling at the corner and was clearly placed over the permanent metal city sign.",
+      "The sticker has no official city logo or contact number.",
+      "The electronic parking meter a few feet away accepts coins and credit cards directly."
+    ],
+    "correct": "skip",
+    "explanation": "Criminals place fake QR stickers on parking meters and signs to intercept payments. The code sends drivers to counterfeit sites that steal credit card numbers. Pay at the physical meter instead.",
+    "takeaways": [
+      "Never scan adhesive stickers pasted onto public signs.",
+      "Use the physical payment slot on the parking meter instead."
+    ]
+  },
+  {
+    "id": "quishing-table-tent-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 1,
+    "title": "A laminated table tent at a neighborhood cafe",
+    "scene": "You are sitting inside a cafe you visit regularly. Each table features a clean acrylic stand holding a printed card: 'Join our Coffee Club for 10% off - Scan to sign up with email'. The server mentions the discount when bringing your mug.",
+    "clues": [
+      "The sign is professionally printed and displayed inside a clean acrylic holder provided by the shop.",
+      "The employee personally confirmed the promotion.",
+      "The phone preview shows the cafe's official website and only requests an email address."
+    ],
+    "correct": "scan",
+    "explanation": "In-store promotional QR codes confirmed by staff in reputable businesses are safe. A customer loyalty program should only request basic contact info, never passwords or credit cards.",
+    "takeaways": [
+      "Promotional codes confirmed by employees in real shops are safe.",
+      "A loyalty discount should never ask for banking details or passwords."
+    ]
+  },
+  {
+    "id": "quishing-package-label-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 2,
+    "title": "A handwritten yellow door tag with a QR code",
+    "scene": "You discover a bright yellow paper slip taped to your front door stating a package could not be delivered. There is no delivery company logo or package tracking number, only a large QR code saying: 'SCAN TO RESCHEDULE OR RETURN TO SENDER'.",
+    "clues": [
+      "The slip contains no carrier name, customer name, or official tracking barcode.",
+      "The message uses aggressive warnings of returning your package to induce panic.",
+      "Legitimate couriers like the postal service leave printed company forms with pre-printed tracking numbers."
+    ],
+    "correct": "skip",
+    "explanation": "Scammers leave fake delivery notices on residential doors. Scanning the code connects to an imposter website that asks for personal details and payment card information to reschedule delivery.",
+    "takeaways": [
+      "Authentic delivery tags always feature official carrier logos and tracking numbers.",
+      "Never scan anonymous paper slips left on your door."
+    ]
+  },
+  {
+    "id": "quishing-flyer-crypto-01",
+    "kind": "scanorskip",
+    "topic": "quishing",
+    "difficulty": 2,
+    "title": "A street lamp flyer promising utility grant assistance",
+    "scene": "A photocopied flyer taped to a telephone pole near your bus stop reads: 'EMERGENCY SENIOR UTILITY RELIEF - GET UP TO $1,200 IN DIRECT AID. Scan the QR code with your phone to apply in 60 seconds.'",
+    "clues": [
+      "The flyer is an anonymous paper notice taped to a public light pole.",
+      "Government assistance agencies do not advertise grant applications on telephone poles.",
+      "Scanning random public flyers can direct your browser to identity theft portals or malware downloads."
+    ],
+    "correct": "skip",
+    "explanation": "Flyer scams target people looking for utility or financial assistance. Government programs never solicit grant applications through street flyers with QR codes. Contact local social services directly through verified government directories.",
+    "takeaways": [
+      "Government assistance programs never recruit through street flyers.",
+      "Never scan anonymous QR codes posted in public spaces."
+    ]
+  }
+]

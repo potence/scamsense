@@ -1,0 +1,73 @@
+[
+  {
+    "id": "prizes-sweepstakes-letter-01",
+    "kind": "redflag",
+    "topic": "prizes",
+    "difficulty": 1,
+    "title": "Email claiming you won a $500,000 sweepstakes",
+    "channel": "email",
+    "from": "Northwind Sweepstakes <claims@northwind-payouts.net>",
+    "subject": "OFFICIAL NOTICE: Your $500,000 winning check is ready for delivery",
+    "segments": [
+      {
+        "text": "Congratulations! Your email address was selected in our annual grand prize drawing. "
+      },
+      {
+        "text": "You have won a verified cash award of $500,000 and a new luxury vehicle. ",
+        "flag": {
+          "id": "f-unentered-win",
+          "reason": "You cannot win a real contest or lottery that you never entered."
+        }
+      },
+      {
+        "text": "Federal lottery regulations require an upfront state processing and delivery fee of $450 before we can dispatch the armored courier. ",
+        "flag": {
+          "id": "f-advance-fee",
+          "reason": "Real lotteries and sweepstakes never ask winners to pay upfront fees or taxes to release prize money."
+        }
+      },
+      {
+        "text": "Please send this $450 fee today using store gift cards or money vouchers to our claims agent.",
+        "flag": {
+          "id": "f-voucher-payment",
+          "reason": "Legitimate organizations never accept prize processing fees or taxes in gift cards or prepaid vouchers."
+        }
+      }
+    ],
+    "explanation": "Legitimate sweepstakes never require winners to pay fees, taxes, or shipping upfront to collect prize money. If you have to pay money to get a prize, it is an advance-fee scam.",
+    "takeaways": [
+      "You never have to pay money upfront to claim a real prize.",
+      "You cannot win a contest you never entered."
+    ]
+  },
+  {
+    "id": "prizes-charity-fund-01",
+    "kind": "choicepair",
+    "topic": "prizes",
+    "difficulty": 2,
+    "title": "Donating safely to disaster relief",
+    "prompt": "Following a severe flood, you want to donate $50 to help affected families. Which donation method is safe?",
+    "options": [
+      {
+        "id": "a",
+        "label": "Visit an established, accredited charity website that you look up yourself on CharityNavigator.org or give.org",
+        "note": "Verified nonprofit organization"
+      },
+      {
+        "id": "b",
+        "label": "Send $50 through a peer-to-peer payment app to an individual account listed in an emotional social media message",
+        "note": "The poster claims they are buying supplies today"
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "Correct: Independent charity evaluator websites verify that donations go directly to transparent, established relief operations with audited finances.",
+      "b": "Risky: After major disasters, scammers set up counterfeit social media appeals to pocket donations. Peer-to-peer mobile transfers to individuals offer zero accountability."
+    },
+    "explanation": "Scammers exploit natural disasters by creating fake charities and emotional crowdfunding requests. Always look up charities independently through trusted evaluators like Charity Navigator or BBB Wise Giving Alliance.",
+    "takeaways": [
+      "Research charities independently before donating.",
+      "Never send disaster donations to unknown individuals via mobile transfer apps."
+    ]
+  }
+]

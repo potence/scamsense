@@ -1,0 +1,96 @@
+[
+  {
+    "id": "shopping-fake-store-01",
+    "kind": "choicepair",
+    "topic": "shopping",
+    "difficulty": 1,
+    "title": "Finding the real online store",
+    "prompt": "You want to buy a new electric kettle from Maple Market. Which web address is the real store?",
+    "options": [
+      {
+        "id": "opt-real",
+        "label": "maplemarket.com"
+      },
+      {
+        "id": "opt-fake",
+        "label": "maplemarket-clearance-sale-90off.shop"
+      }
+    ],
+    "correctId": "opt-real",
+    "reasons": {
+      "opt-real": "This is the real store domain with no extra words or weird endings.",
+      "opt-fake": "Fake shopping sites add words like \"clearance\" or \"90off\" to lure you in and steal card details."
+    },
+    "explanation": "Scammers create look-alike shopping sites that advertise 80% to 90% discounts on popular goods. The items never arrive, and the criminals steal your credit card information. Always verify the address.",
+    "takeaways": [
+      "Unbelievable discounts are almost always fake.",
+      "Check the domain carefully before buying."
+    ]
+  },
+  {
+    "id": "shopping-overpayment-check-01",
+    "kind": "redflag",
+    "topic": "shopping",
+    "difficulty": 2,
+    "title": "Buyer sending an extra check for your furniture",
+    "channel": "sms",
+    "from": "+1 (555) 0129",
+    "segments": [
+      {
+        "text": "Hello, I am glad to purchase your dining table set for the listed $400. "
+      },
+      {
+        "text": "My office accountant accidentally made out the cashier's check for $1,200 instead of $400. ",
+        "flag": {
+          "id": "f-check-overpay",
+          "reason": "Overpayment checks are a guaranteed scam. Legitimate buyers do not accidentally send hundreds of extra dollars."
+        }
+      },
+      {
+        "text": "Please deposit the $1,200 check, keep $100 for your trouble, and wire the remaining $700 back to my movers today. ",
+        "flag": {
+          "id": "f-wire-refund",
+          "reason": "The scammer wants you to send your own real cash before the fake check bounces days or weeks later."
+        }
+      },
+      {
+        "text": "The moving truck will arrive once you confirm the wire transfer."
+      }
+    ],
+    "explanation": "Banks are required by law to make check funds available within a few days, but verifying a forged cashier's check can take weeks. When it bounces, you are legally responsible for all funds you wired away.",
+    "takeaways": [
+      "Never accept a check for more than the selling price.",
+      "Never wire back part of a check payment."
+    ]
+  },
+  {
+    "id": "shopping-clearance-ad-01",
+    "kind": "choicepair",
+    "topic": "shopping",
+    "difficulty": 2,
+    "title": "Assessing a 90% off social media shopping ad",
+    "prompt": "A sponsored social media ad shows a $400 outdoor winter jacket on sale for $39 with free shipping. Which action is safe?",
+    "options": [
+      {
+        "id": "a",
+        "label": "Ignore the ad and search for the jacket directly on the manufacturer's official website",
+        "note": "Independent verification"
+      },
+      {
+        "id": "b",
+        "label": "Click the link and purchase immediately using your debit card before the 10-minute timer expires",
+        "note": "Page shows countdown clock"
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "Correct: 90% discounts on premium goods advertised on social media almost always lead to fraudulent stores that steal debit card numbers.",
+      "b": "Risky: The countdown clock is manufactured panic designed to make you type payment details before you notice the site is counterfeit."
+    },
+    "explanation": "Scammers buy social media ads promoting unbelievable discounts on brand-name products. Victims either receive counterfeit goods or nothing at all while having their payment cards compromised.",
+    "takeaways": [
+      "Unbelievable social media discounts usually lead to counterfeit storefronts.",
+      "Look up products directly on authorized retailer websites."
+    ]
+  }
+]

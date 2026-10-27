@@ -1,0 +1,130 @@
+[
+  {
+    "id": "phishing-bank-text-01",
+    "kind": "redflag",
+    "topic": "phishing",
+    "difficulty": 1,
+    "title": "Your bank account is locked?",
+    "channel": "sms",
+    "from": "+1 (800) 555-0147",
+    "segments": [
+      { "text": "Bluebird Bank ALERT: ", "flag": { "id": "f-unknown-number", "reason": "This came from a number you don't know. Your bank's real messages come from the short number they already use, or not at all." } },
+      { "text": "Your account has been locked. " },
+      { "text": "Verify now or it will be closed within 24 hours. ", "flag": { "id": "f-urgency", "reason": "Pressure to act fast is a warning sign. Real banks give you time." } },
+      { "text": "Tap here: bluebird-bank-verify.net", "flag": { "id": "f-link", "reason": "The link goes to a strange address, not your bank's real website. Never sign in from a link in a text." } }
+    ],
+    "explanation": "Scammers send texts that look like they come from your bank. They try to scare you into tapping a link. The safe move is to ignore the link and call the number on the back of your bank card.",
+    "takeaways": [
+      "Don't tap links in surprise texts.",
+      "Call your bank using the number on your card."
+    ]
+  },
+  {
+    "id": "phishing-package-fee-01",
+    "kind": "redflag",
+    "topic": "phishing",
+    "difficulty": 2,
+    "title": "A package fee email",
+    "channel": "email",
+    "from": "Northwind Delivery <support@northwind-parcel-help.info>",
+    "subject": "Action required: your package is on hold",
+    "segments": [
+      { "text": "Dear Customer, ", "flag": { "id": "f-generic", "reason": "A real company that has your package knows your name. 'Dear Customer' is a sign of a mass scam email." } },
+      { "text": "we tried to deliver your package today but no one was home. " },
+      { "text": "To schedule a new delivery, pay a $1.99 redelivery fee. ", "flag": { "id": "f-small-fee", "reason": "A tiny fee is a trick to get your card number. Delivery companies don't charge you by email like this." } },
+      { "text": "Enter your card details at the link below. ", "flag": { "id": "f-card", "reason": "Never type your card details into a link from an email you weren't expecting." } },
+      { "text": "Thank you for choosing Northwind Delivery." }
+    ],
+    "explanation": "Fake delivery emails are very common, especially around holidays. The small fee seems harmless, but the real goal is your card number. If you are expecting a package, check the tracking on the store's website yourself.",
+    "takeaways": [
+      "Check the sender's address, not just the name.",
+      "Small surprise fees are a common trick.",
+      "Track packages on the store's own website."
+    ]
+  },
+  {
+    "id": "phishing-streaming-payment-01",
+    "kind": "redflag",
+    "topic": "phishing",
+    "difficulty": 3,
+    "title": "Your streaming payment failed?",
+    "channel": "email",
+    "from": "Riverstream Billing <billing@riverstream-accounts-update.co>",
+    "subject": "Your payment failed. Update now to keep watching",
+    "segments": [
+      {
+        "text": "Hi Member, we were unable to process your last payment. "
+      },
+      {
+        "text": "Your membership will be cancelled tonight ",
+        "flag": {
+          "id": "f-urgency",
+          "reason": "A short deadline is meant to rush you. A real service gives you time and shows the problem inside its own app."
+        }
+      },
+      {
+        "text": "unless you update your billing details. "
+      },
+      {
+        "text": "Click the button below and sign in with your email and password. ",
+        "flag": {
+          "id": "f-signin",
+          "reason": "Never sign in from a link in an email. Open the app or type the website address yourself."
+        }
+      },
+      {
+        "text": "You can also open the attached form. ",
+        "flag": {
+          "id": "f-attachment",
+          "reason": "An attachment you didn't expect can hide a harmful program. Don't open it."
+        }
+      },
+      {
+        "text": "Sent by billing@riverstream-accounts-update.co",
+        "flag": {
+          "id": "f-sender",
+          "reason": "The sender's address is not the company's real website name. Anyone can type any name in the 'from' line."
+        }
+      }
+    ],
+    "explanation": "This email looks like a normal billing notice, but it wants your password and card details. Scammers copy real company logos and wording. If you are worried about a payment, open the app or the website yourself and check your account there.",
+    "takeaways": [
+      "Check the sender's full address.",
+      "Don't sign in from email links.",
+      "Check your account in the app instead."
+    ]
+  },
+  {
+    "id": "phishing-toll-notice-01",
+    "kind": "redflag",
+    "topic": "phishing",
+    "difficulty": 1,
+    "title": "Text demanding immediate toll road payment",
+    "channel": "sms",
+    "from": "+1 (555) 0196",
+    "segments": [
+      {
+        "text": "State Highway Toll Services: "
+      },
+      {
+        "text": "Records show your vehicle has an outstanding unpaid toll charge of $5.45. ",
+        "flag": {
+          "id": "f-toll-text",
+          "reason": "State highway authorities mail toll violations by postal letter, never by random text messages."
+        }
+      },
+      {
+        "text": "To prevent an immediate $50 penalty and driver license suspension, settle your balance at state-tolls-direct-pay.com.",
+        "flag": {
+          "id": "f-fake-toll-url",
+          "reason": "The link leads to an imposter .com address rather than your state department of transportation's official .gov portal."
+        }
+      }
+    ],
+    "explanation": "Toll road smishing scams send mass texts pretending an unpaid toll will lead to license suspension. Real state toll agencies mail violation notices to the vehicle owner's address. Never click links in toll text messages.",
+    "takeaways": [
+      "State toll agencies send violation notices by postal mail, never text.",
+      "Never pay road tolls through links sent in text messages."
+    ]
+  }
+]

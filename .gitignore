@@ -1,0 +1,6 @@
+node_modules
+dist
+.vite
+.obsidian
+.DS_Store
+Thumbs.db

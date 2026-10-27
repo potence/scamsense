@@ -1,0 +1,128 @@
+/* Tailwind, only for the few shadcn components in src/components/ui.
+   We load Tailwind's theme and utilities but NOT its base reset ("preflight"),
+   so styles.css keeps working exactly as before. Our styles.css is not in a layer,
+   so where both set the same thing, styles.css wins. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+/* source(none) + @source: only scan the shadcn components for class names. Otherwise our own
+   classes (".ring", ".container") match Tailwind utilities and pick up extra styles. */
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "./components/ui";
+@import "tw-animate-css";
+
+/* shadcn's color and radius names point at our design tokens (defined in styles.css). */
+@theme inline {
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-card: var(--card);
+  --color-card-foreground: var(--ink);
+  --color-popover: var(--card);
+  --color-popover-foreground: var(--ink);
+  --color-primary: var(--accent);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: var(--accent-tint);
+  --color-secondary-foreground: var(--accent);
+  --color-muted: var(--paper);
+  --color-muted-foreground: var(--ink-2);
+  --color-accent: var(--accent-tint);
+  --color-accent-foreground: var(--accent);
+  --color-destructive: var(--bad);
+  --color-border: var(--hairline);
+  --color-input: var(--hairline);
+  --color-ring: var(--accent);
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r);
+  --radius-lg: var(--r-lg);
+  --radius-xl: var(--r-lg);
+}
+
+/* Copied from the shadcn package's tailwind.css (MIT license), lines 1-87 only:
+   the accordion animation and the data-open / data-closed style variants the components use.
+   (Copied so we don't need the whole shadcn command-line tool as an app dependency.) */
+@theme inline {
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(
+        --radix-accordion-content-height,
+        var(--accordion-panel-height, auto)
+      );
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(
+        --radix-accordion-content-height,
+        var(--accordion-panel-height, auto)
+      );
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+/* Custom variants */
+@custom-variant data-open {
+  &:where([data-state="open"]),
+  &:where([data-open]:not([data-open="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-closed {
+  &:where([data-state="closed"]),
+  &:where([data-closed]:not([data-closed="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-checked {
+  &:where([data-state="checked"]),
+  &:where([data-checked]:not([data-checked="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-unchecked {
+  &:where([data-state="unchecked"]),
+  &:where([data-unchecked]:not([data-unchecked="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-selected {
+  &:where([data-selected="true"]) {
+    @slot;
+  }
+}
+
+@custom-variant data-disabled {
+  &:where([data-disabled="true"]),
+  &:where([data-disabled]:not([data-disabled="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-active {
+  &:where([data-state="active"]),
+  &:where([data-active]:not([data-active="false"])) {
+    @slot;
+  }
+}
+
+@custom-variant data-horizontal {
+  &:where([data-orientation="horizontal"]) {
+    @slot;
+  }
+}
+
+@custom-variant data-vertical {
+  &:where([data-orientation="vertical"]) {
+    @slot;
+  }
+}
+

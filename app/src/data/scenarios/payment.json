@@ -1,0 +1,134 @@
+[
+  {
+    "id": "payment-giftcard-power-01",
+    "kind": "redflag",
+    "topic": "payment",
+    "difficulty": 1,
+    "title": "Pay your power bill with gift cards?",
+    "channel": "sms",
+    "from": "+1 (800) 555-0192",
+    "segments": [
+      {
+        "text": "Northwind Energy Notice: "
+      },
+      {
+        "text": "Your power will be cut off in 1 hour due to an unpaid balance of $120. ",
+        "flag": {
+          "id": "f-rush",
+          "reason": "Threatening shutoff in one hour is artificial urgency to make you panic."
+        }
+      },
+      {
+        "text": "To avoid disconnection, you must purchase a $120 store gift card ",
+        "flag": {
+          "id": "f-giftcard",
+          "reason": "Utility companies never accept payment in store gift cards. Only scammers ask for gift cards."
+        }
+      },
+      {
+        "text": "and call (800) 555-0192 with the numbers on the back.",
+        "flag": {
+          "id": "f-code",
+          "reason": "Reading the numbers on the back gives the money away instantly and it cannot be refunded."
+        }
+      }
+    ],
+    "explanation": "Real utility companies send bills by mail and offer many normal ways to pay. They never tell you to buy gift cards or threaten shutoff within one hour. Hang up or delete the text.",
+    "takeaways": [
+      "No real utility company ever demands gift cards.",
+      "Call the number on your real monthly bill if concerned."
+    ]
+  },
+  {
+    "id": "payment-order-giftcard-01",
+    "kind": "orderSteps",
+    "topic": "payment",
+    "difficulty": 1,
+    "title": "If someone demands a gift card",
+    "prompt": "A caller says you must pay an urgent fee with store gift cards immediately. Put the safe steps in order:",
+    "steps": [
+      "Remind yourself that no legitimate business or government agency accepts gift cards.",
+      "Block the caller's phone number so they cannot harass you again.",
+      "Hang up the phone immediately without arguing or explaining.",
+      "Verify your account status by looking up the company's real number yourself."
+    ],
+    "correctOrder": [2, 0, 3, 1],
+    "whyFirstStepMatters": "Hanging up breaks the scammer's psychological pressure instantly. As long as you stay on the line, they will keep using urgency and fear to manipulate you.",
+    "explanation": "Hanging up is always the safest first move against pressure tactics. Once the call is ended, you have the calm space to think clearly and verify facts.",
+    "takeaways": [
+      "Hang up immediately on anyone demanding gift cards.",
+      "Real agencies never accept gift cards."
+    ]
+  },
+  {
+    "id": "payment-wire-contractor-01",
+    "kind": "redflag",
+    "topic": "payment",
+    "difficulty": 2,
+    "title": "Last-minute wire instructions from your contractor",
+    "channel": "email",
+    "from": "Apex Remodeling <billing@apex-remodel-pay.com>",
+    "subject": "Urgent: Updated payment instructions for your remodel deposit",
+    "segments": [
+      {
+        "text": "Hello Robert, regarding your kitchen remodeling project scheduled to begin next Monday: "
+      },
+      {
+        "text": "Our primary bank account is undergoing an annual audit, so please do not use the account details on your contract. ",
+        "flag": {
+          "id": "f-audit-change",
+          "reason": "Sudden changes to bank accounts by email are a major red flag for email hijacking."
+        }
+      },
+      {
+        "text": "Please wire the $3,500 deposit to our new account today before 4:00 PM, ",
+        "flag": {
+          "id": "f-wire-deadline",
+          "reason": "Wire transfers cannot be reversed once sent, and strict afternoon deadlines pressure you not to verify."
+        }
+      },
+      {
+        "text": "or we will have to reschedule your build date by two months. Do not call our office line as our phone system is down today.",
+        "flag": {
+          "id": "f-no-call",
+          "reason": "Telling you not to call the office is designed to stop you from confirming the change with your real contractor."
+        }
+      }
+    ],
+    "explanation": "Scammers hack or spoof contractor email accounts to redirect home renovation deposits to fraudulent accounts. Never wire funds based on an email change without verbally verifying with the contractor on a known phone number.",
+    "takeaways": [
+      "Always call your contractor on a trusted number before wiring funds.",
+      "Never follow bank account changes sent only by email."
+    ]
+  },
+  {
+    "id": "payment-method-choice-01",
+    "kind": "choicepair",
+    "topic": "payment",
+    "difficulty": 1,
+    "title": "Choosing a safe payment method",
+    "prompt": "You are purchasing a gently used riding lawnmower from an online seller in your county. Which payment method protects you?",
+    "options": [
+      {
+        "id": "a",
+        "label": "Inspect the mower in person first, or pay with a credit card that has purchase protection",
+        "note": "Standard consumer safety"
+      },
+      {
+        "id": "b",
+        "label": "Send an immediate bank wire transfer or gift card PINs so the seller holds it for you",
+        "note": "Seller promises to deliver it tomorrow"
+      }
+    ],
+    "correctId": "a",
+    "reasons": {
+      "a": "Correct: Paying after seeing the item in person or using a credit card allows you to inspect the mower and dispute unauthorized charges if fraud occurs.",
+      "b": "Risky: Wire transfers and gift card codes cannot be reversed or refunded once sent. If the seller does not deliver, your bank cannot get your money back."
+    },
+    "explanation": "Legitimate private sales allow inspection before payment. Wire transfers, peer-to-peer cash apps, and gift cards offer zero fraud refund protection once sent.",
+    "takeaways": [
+      "Never wire money or send gift cards to hold items from private sellers.",
+      "Inspect expensive purchases in person before handing over money."
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "popups-virus-call-01",
+    "kind": "redflag",
+    "topic": "popups",
+    "difficulty": 1,
+    "title": "Your computer is infected?",
+    "channel": "popup",
+    "from": "System Security Center",
+    "segments": [
+      {
+        "text": "WARNING! "
+      },
+      {
+        "text": "Your computer is infected with 5 viruses. ",
+        "flag": {
+          "id": "f-fake-scan",
+          "reason": "A web page can't scan your computer. This is just a picture made to scare you."
+        }
+      },
+      {
+        "text": "Do not close this window or turn off your computer. ",
+        "flag": {
+          "id": "f-dont-close",
+          "reason": "They want to keep you trapped. Closing the window is exactly the right move."
+        }
+      },
+      {
+        "text": "Call Support now at (800) 555-0188. ",
+        "flag": {
+          "id": "f-phone",
+          "reason": "Real security warnings never give you a phone number to call. This number goes to scammers."
+        }
+      },
+      {
+        "text": "Your files may be deleted in 5 minutes.",
+        "flag": {
+          "id": "f-timer",
+          "reason": "A countdown is pressure. Real warnings don't rush you."
+        }
+      }
+    ],
+    "explanation": "Fake virus pop-ups are made to look scary so you call the number. The person who answers will ask for money or for access to your computer. Close the window. If it won't close, restart your computer.",
+    "takeaways": [
+      "Never call a number from a pop-up.",
+      "Close the window or restart your computer."
+    ]
+  },
+  {
+    "id": "popups-fake-update-01",
+    "kind": "redflag",
+    "topic": "popups",
+    "difficulty": 2,
+    "title": "An update you must install?",
+    "channel": "popup",
+    "from": "Video Player Update",
+    "segments": [
+      {
+        "text": "Your video player is out of date. "
+      },
+      {
+        "text": "You must install the latest update to watch this video. ",
+        "flag": {
+          "id": "f-needed",
+          "reason": "A website can't tell what your computer needs. Get updates only from your computer's own settings or the app itself."
+        }
+      },
+      {
+        "text": "Click Download to install SpeedPlay_Update.exe. ",
+        "flag": {
+          "id": "f-download",
+          "reason": "A file you download from a pop-up can install a harmful program."
+        }
+      },
+      {
+        "text": "The update is free and only takes a second. "
+      },
+      {
+        "text": "Your browser will be blocked until you update.",
+        "flag": {
+          "id": "f-threat",
+          "reason": "Threats like this are pressure. A real update never locks your browser."
+        }
+      }
+    ],
+    "explanation": "Fake update pop-ups trick you into downloading a harmful program. Real updates come from your computer's settings or from the app you already use. If a website says you need an update, close it and check your settings yourself.",
+    "takeaways": [
+      "Don't download updates from pop-ups.",
+      "Update from your computer's settings instead."
+    ]
+  },
+  {
+    "id": "popups-prize-01",
+    "kind": "redflag",
+    "topic": "prizes",
+    "difficulty": 1,
+    "title": "You won a prize?",
+    "channel": "popup",
+    "from": "Prize Center",
+    "segments": [
+      {
+        "text": "Congratulations! You are today's lucky visitor. ",
+        "flag": {
+          "id": "f-lucky",
+          "reason": "You didn't enter anything. Real prizes don't pop up out of nowhere."
+        }
+      },
+      {
+        "text": "You have won a $1,000 gift card. "
+      },
+      {
+        "text": "Claim it in the next 2 minutes ",
+        "flag": {
+          "id": "f-urgency",
+          "reason": "A short time limit is meant to stop you from thinking it over."
+        }
+      },
+      {
+        "text": "by entering your name, address and card number to pay a small shipping fee.",
+        "flag": {
+          "id": "f-fee",
+          "reason": "A real prize never asks you to pay. The fee is how they get your card number."
+        }
+      }
+    ],
+    "explanation": "Prize pop-ups promise something big so you hand over your card details. If you have to pay to get a prize, it isn't a prize. Close the window.",
+    "takeaways": [
+      "If you have to pay, it isn't a prize.",
+      "Never enter card details in a pop-up."
+    ]
+  },
+  {
+    "id": "popups-security-alert-01",
+    "kind": "redflag",
+    "topic": "popups",
+    "difficulty": 2,
+    "title": "Full-screen computer warning with siren noise",
+    "channel": "popup",
+    "from": "System Security Center",
+    "segments": [
+      {
+        "text": "CRITICAL WARNING: Your device has been locked due to suspicious spyware infection. "
+      },
+      {
+        "text": "Do not restart or turn off your computer or your hard drive will be completely erased. ",
+        "flag": {
+          "id": "f-erase-threat",
+          "reason": "Threatening that restarting will destroy your computer is an intimidation tactic to stop you from closing the browser."
+        }
+      },
+      {
+        "text": "Call Windows certified engineers immediately at (800) 555-0199 to unlock your computer. ",
+        "flag": {
+          "id": "f-support-phone",
+          "reason": "Legitimate operating system security software never displays toll-free phone numbers to call for support."
+        }
+      },
+      {
+        "text": "If you close this window, your banking logins will be compromised across the internet.",
+        "flag": {
+          "id": "f-panic-threat",
+          "reason": "Scammers invent extreme consequences to manipulate you into calling their call center."
+        }
+      }
+    ],
+    "explanation": "Browser security pop-ups cannot detect viruses on your machine; they are just web pages styled to look like system warnings. Never call phone numbers shown in web pop-ups. Simply restart your computer or force-close your browser.",
+    "takeaways": [
+      "Real security alerts never tell you to call an 800 number.",
+      "If your screen locks with warning sounds, restart your computer."
+    ]
+  }
+]

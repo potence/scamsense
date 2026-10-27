@@ -1,0 +1,149 @@
+[
+  {
+    "id": "realorscam-inbox-01",
+    "kind": "realorscam",
+    "topic": "phishing",
+    "difficulty": 2,
+    "title": "Real or scam?",
+    "explanation": "Most messages you get are real. Real ones don't rush you, and they never ask you to read out a code, share a password, or pay in an unusual way.",
+    "takeaways": [
+      "Real messages don't rush you or ask for codes, passwords or payment.",
+      "When in doubt, check using an app or a number you already have."
+    ],
+    "items": [
+      {
+        "id": "real-clinic-text",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "phishing",
+        "from": "Riverside Family Clinic",
+        "text": "Riverside Family Clinic: Reminder of your appointment tomorrow at 10:30 AM. Reply C to confirm, or call the office to change it.",
+        "explanation": "This is a normal reminder. It doesn't rush you, ask for money, or ask you to tap a link. Replying C only confirms an appointment you already made.",
+        "howToCheck": "Call the clinic using the number on your appointment card."
+      },
+      {
+        "id": "real-order-text",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "phishing",
+        "from": "Northwind Market",
+        "text": "Northwind Market: Your order #48213 was delivered today at 2:14 PM. Questions? Open the Northwind Market app.",
+        "explanation": "This is real. It only tells you something happened, and it sends you to the store's own app instead of a link.",
+        "howToCheck": "Open the Northwind Market app yourself and look at your orders."
+      },
+      {
+        "id": "real-statement-email",
+        "answer": "real",
+        "channel": "email",
+        "topic": "phishing",
+        "from": "Bluebird Bank <statements@bluebirdbank.com>",
+        "subject": "Your October statement is ready",
+        "text": "Your October statement is ready. Sign in to the Bluebird Bank app or website the way you normally do to view it. We will never ask for your password by email.",
+        "explanation": "This is real. There is no link to tap, it tells you to sign in the way you normally do, and it says the bank will never ask for your password by email.",
+        "howToCheck": "Open the Bluebird Bank app, or type the bank's address yourself, and look for the statement there."
+      },
+      {
+        "id": "real-library-text",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "phishing",
+        "from": "Maple Street Library",
+        "text": "Maple Street Library: your hold is ready for pickup until Nov 3.",
+        "explanation": "This is real. It asks for nothing: no link, no payment, no personal details.",
+        "howToCheck": "Call the library, or check your account on the library website you already use."
+      },
+      {
+        "id": "real-water-notice",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "phishing",
+        "from": "Greenfield Water",
+        "text": "Greenfield Water: planned maintenance on Oct 29, 9 AM to 1 PM may briefly reduce water pressure. No action needed.",
+        "explanation": "This is real. It gives information and says no action is needed. Scams almost always want you to do something, and fast.",
+        "howToCheck": "Look for the notice on the water company's website, or call the number on your water bill."
+      },
+      {
+        "id": "real-code-text",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "phishing",
+        "from": "Bluebird Bank",
+        "text": "Bluebird Bank: Your code is 482913. Don't share it with anyone. We will never ask for it. If you didn't request this, call the number on your card.",
+        "explanation": "This is real only because you asked for a code, for example while signing in. The code is for you to type in yourself. Scammers sometimes call and ask you to read a code like this to them. Never share it with anyone.",
+        "howToCheck": "If you didn't ask for a code, don't use it. Call the number on the back of your card."
+      },
+      {
+        "id": "real-clinic-call",
+        "answer": "real",
+        "channel": "call",
+        "topic": "government",
+        "from": "Riverside Family Clinic",
+        "text": "Hello, this is a reminder from Riverside Family Clinic. You have an appointment tomorrow at ten thirty in the morning. If you need to change it, please call the office using the number on your appointment card. Thank you, and have a good day.",
+        "audio": "call-phone-real-clinic-01-n1.mp3",
+        "explanation": "This is real. The caller gives information, asks for nothing, and tells you to use the number on your appointment card if you need to change anything.",
+        "howToCheck": "Call the clinic using the number on your appointment card."
+      },
+      {
+        "id": "real-pharmacy-call",
+        "answer": "real",
+        "channel": "call",
+        "topic": "phishing",
+        "from": "Maple Street Pharmacy",
+        "text": "Hi, this is Maple Street Pharmacy calling. A prescription is ready for pickup. We're open until eight tonight. There's nothing you need to do over the phone. Just bring your photo ID when you come in. Thank you.",
+        "audio": "call-phone-real-pharmacy-01-n1.mp3",
+        "explanation": "This is real. The caller asks for nothing over the phone and tells you to bring your photo ID in person.",
+        "howToCheck": "Call the pharmacy using the number on your prescription label."
+      },
+      {
+        "id": "real-bankfraud-call",
+        "answer": "real",
+        "channel": "call",
+        "topic": "credentials",
+        "from": "Bluebird Bank",
+        "text": "Hello, this is the fraud prevention team at Bluebird Bank. We noticed a card purchase today that looked unusual, and we want to make sure it was you. We will never ask for your PIN, your password, or a full card number. If you'd like to talk it through, please hang up and call the number on the back of your card. Thank you.",
+        "audio": "call-phone-real-bankfraud-01-n1.mp3",
+        "explanation": "This call is real: the caller asks for nothing and tells you to call the number on your card. Even so, hanging up and calling the number on the back of your card is still the safest move, because caller ID can be faked.",
+        "howToCheck": "Hang up and call the number on the back of your card."
+      },
+      {
+        "id": "real-pharmacy-refill-text",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "shopping",
+        "from": "Maple Street Pharmacy",
+        "text": "Maple Street Pharmacy: Prescription #64019 is ready for pickup. Store hours: Mon-Sat 9am-7pm. Reply STOP to cancel text reminders.",
+        "explanation": "This message is legitimate. It provides status information only, asks for no payment or confidential credentials, and includes standard carrier opt-out instructions.",
+        "howToCheck": "Call the pharmacy using the phone number printed on your existing medicine bottle."
+      },
+      {
+        "id": "real-card-fraud-alert",
+        "answer": "real",
+        "channel": "sms",
+        "topic": "payment",
+        "from": "Bluebird Bank Fraud Alert",
+        "text": "Bluebird Bank: Did you attempt a $42.50 charge at Maple Market today? Reply YES if this was you, or NO if you did not recognize it. We will never ask for your password.",
+        "explanation": "This is a legitimate two-way fraud verification message. It requests a simple YES or NO reply, includes no suspicious links, and explicitly reminds you that the bank will never ask for your password.",
+        "howToCheck": "If you reply NO, the bank immediately freezes the card and tells you to call the number on the back of your card."
+      },
+      {
+        "id": "real-grocery-delivery-email",
+        "answer": "real",
+        "channel": "email",
+        "topic": "shopping",
+        "from": "Northwind Market <receipts@northwindmarket.com>",
+        "subject": "Receipt for your order #8921",
+        "text": "Thank you for shopping with Northwind Market. Your delivery was completed today at 1:45 PM. Your receipt total is $38.20. View your full itemized order history inside the Northwind Market app.",
+        "explanation": "This email is an informational purchase receipt. It asks for no passwords or payment updates, and directs you to view full records inside the official app you already have installed.",
+        "howToCheck": "Open the Northwind Market app on your phone to verify your purchase history."
+      },
+      { "id": "scam-bank-text", "answer": "scam", "scenarioRef": "phishing-bank-text-01" },
+      { "id": "scam-package-email", "answer": "scam", "scenarioRef": "phishing-package-fee-01" },
+      { "id": "scam-streaming-email", "answer": "scam", "scenarioRef": "phishing-streaming-payment-01" },
+      { "id": "scam-techsupport-call", "answer": "scam", "scenarioRef": "phone-techsupport-01" },
+      { "id": "scam-grandchild-call", "answer": "scam", "scenarioRef": "phone-grandchild-01" },
+      { "id": "scam-benefits-call", "answer": "scam", "scenarioRef": "phone-benefits-01" },
+      { "id": "scam-toll-text", "answer": "scam", "scenarioRef": "phishing-toll-notice-01" },
+      { "id": "scam-contractor-wire", "answer": "scam", "scenarioRef": "payment-wire-contractor-01" }
+    ]
+  }
+]

@@ -1,0 +1,800 @@
+{
+  "teach-phishing": {
+    "tier": 1,
+    "text": "Phishing emails and texts. Fake messages that pretend to be your bank, a store, or a delivery company. Three warning signs. The sender's address doesn't match the real company. The message rushes or scares you: \"act now\" or \"your account will be closed\". It has a link or attachment you weren't expecting. The safe move. STOP: don't tap links or open attachments. SPOT: look closely at who sent it. BLOCK: delete the message and call using a number you already trust.",
+    "hash": "61620ca6f5c0",
+    "file": "narration/teach-phishing.mp3"
+  },
+  "teach-phone": {
+    "tier": 1,
+    "text": "Phone scams. Callers who pretend to be tech support, family, or the government. Three warning signs. They create panic so you act before you think. They ask you to pay with gift cards, a wire transfer, or crypto. They tell you to stay on the line and keep it a secret. The safe move. STOP: hang up. Taking a breath breaks their pressure. SPOT: courts, police, and tech support never take gift cards. BLOCK: call your family or bank back on a saved number.",
+    "hash": "abc388ffe139",
+    "file": "narration/teach-phone.mp3"
+  },
+  "teach-fake-sites": {
+    "tier": 1,
+    "text": "Fake websites. Look-alike websites that copy real banks and stores. Three warning signs. Read the address from the end of the main name, just before the first slash. Look-alike addresses swap or add letters. Type the address yourself or use a saved bookmark. The safe move. STOP: don't type passwords or card numbers. SPOT: read the web address letter by letter from the end. BLOCK: close the tab and type the address yourself or use a saved bookmark.",
+    "hash": "f3ceb756d788",
+    "file": "narration/teach-fake-sites.mp3"
+  },
+  "teach-quishing": {
+    "tier": 1,
+    "text": "QR code scams. QR codes that lead to fake payment or sign-in pages. Three warning signs. A QR code is just a link in disguise. Scammers put stickers over real QR codes. Check the address your phone shows before you open it. The safe move. STOP: don't scan surprise codes. SPOT: check if a sticker was added later, and preview the web address. BLOCK: pay through an official app, a card reader, or a trusted website.",
+    "hash": "77ea2b333ca5",
+    "file": "narration/teach-quishing.mp3"
+  },
+  "teach-popups": {
+    "tier": 1,
+    "text": "Scary pop-ups. Fake warnings on your screen that say your computer has a virus. Three warning signs. Real warnings never give you a phone number to call. A web page can't scan your computer for viruses. Close the window or restart instead of clicking or calling. The safe move. STOP: don't call the phone number on the screen. SPOT: real security warnings never tell you to call a stranger. BLOCK: close the browser tab or restart your device.",
+    "hash": "62ef4f862afa",
+    "file": "narration/teach-popups.mp3"
+  },
+  "message-fake-sites-bank-address-01": {
+    "tier": 1,
+    "text": "Your bank is Bluebird Bank. Which address is the real bank website? Choice 1: bluebirdbank.com. Choice 2: bluebirdbank.com.secure-login.net.",
+    "hash": "4a1bb18e842d",
+    "file": "narration/message-fake-sites-bank-address-01.mp3"
+  },
+  "message-fake-sites-lookalike-shop-01": {
+    "tier": 1,
+    "text": "You want to shop at Maple Market. Which address is the real store? Choice 1: maplernarket.com. Choice 2: maplemarket.com.",
+    "hash": "dea50a7d1af8",
+    "file": "narration/message-fake-sites-lookalike-shop-01.mp3"
+  },
+  "message-fake-sites-https-lock-01": {
+    "tier": 1,
+    "text": "Both pages show a lock icon next to the address. Your bank is Bluebird Bank. Which page should you trust? Choice 1: bluebirdbank.com. Choice 2: bluebird-bank-online-help.com.",
+    "hash": "4da423cb29be",
+    "file": "narration/message-fake-sites-https-lock-01.mp3"
+  },
+  "message-phishing-bank-text-01": {
+    "tier": 1,
+    "text": "From +1 (800) 555-0147. Bluebird Bank ALERT: Your account has been locked. Verify now or it will be closed within 24 hours. Tap here: bluebird-bank-verify.net",
+    "hash": "6f1252ab2b03",
+    "file": "narration/message-phishing-bank-text-01.mp3"
+  },
+  "message-phishing-package-fee-01": {
+    "tier": 1,
+    "text": "From Northwind Delivery <support@northwind-parcel-help.info>. Subject: Action required: your package is on hold. Dear Customer, we tried to deliver your package today but no one was home. To schedule a new delivery, pay a $1.99 redelivery fee. Enter your card details at the link below. Thank you for choosing Northwind Delivery.",
+    "hash": "946cf965f383",
+    "file": "narration/message-phishing-package-fee-01.mp3"
+  },
+  "message-phishing-streaming-payment-01": {
+    "tier": 1,
+    "text": "From Riverstream Billing <billing@riverstream-accounts-update.co>. Subject: Your payment failed. Update now to keep watching. Hi Member, we were unable to process your last payment. Your membership will be cancelled tonight unless you update your billing details. Click the button below and sign in with your email and password. You can also open the attached form. Sent by billing@riverstream-accounts-update.co",
+    "hash": "59fee090b517",
+    "file": "narration/message-phishing-streaming-payment-01.mp3"
+  },
+  "message-popups-virus-call-01": {
+    "tier": 1,
+    "text": "From System Security Center. WARNING! Your computer is infected with 5 viruses. Do not close this window or turn off your computer. Call Support now at (800) 555-0188. Your files may be deleted in 5 minutes.",
+    "hash": "30a75ebff53d",
+    "file": "narration/message-popups-virus-call-01.mp3"
+  },
+  "message-popups-fake-update-01": {
+    "tier": 1,
+    "text": "From Video Player Update. Your video player is out of date. You must install the latest update to watch this video. Click Download to install SpeedPlay_Update.exe. The update is free and only takes a second. Your browser will be blocked until you update.",
+    "hash": "1cb0763ff514",
+    "file": "narration/message-popups-fake-update-01.mp3"
+  },
+  "message-popups-prize-01": {
+    "tier": 1,
+    "text": "From Prize Center. Congratulations! You are today's lucky visitor. You have won a $1,000 gift card. Claim it in the next 2 minutes by entering your name, address and card number to pay a small shipping fee.",
+    "hash": "8f1a6d4e010e",
+    "file": "narration/message-popups-prize-01.mp3"
+  },
+  "message-quishing-parking-meter-01": {
+    "tier": 1,
+    "text": "You park downtown. The meter has a QR code sticker that says 'Scan to pay'. The sticker looks a little crooked, and there is another code printed on the meter underneath it.",
+    "hash": "d73e762598fa",
+    "file": "narration/message-quishing-parking-meter-01.mp3"
+  },
+  "message-quishing-restaurant-menu-01": {
+    "tier": 1,
+    "text": "You sit down at a restaurant you know. The QR code for the menu is printed on the restaurant's own table card, with its logo. A server tells you it opens the menu. When you scan, your phone shows a preview address with the restaurant's name.",
+    "hash": "2e408a17b553",
+    "file": "narration/message-quishing-restaurant-menu-01.mp3"
+  },
+  "message-quishing-package-email-01": {
+    "tier": 1,
+    "text": "You get an email saying a package couldn't be delivered. You don't remember ordering anything. The email shows a QR code and says 'Scan with your phone to reschedule delivery'.",
+    "hash": "f0516acf4eb6",
+    "file": "narration/message-quishing-package-email-01.mp3"
+  },
+  "message-real-clinic-text": {
+    "tier": 1,
+    "text": "From Riverside Family Clinic. Riverside Family Clinic: Reminder of your appointment tomorrow at 10:30 AM. Reply C to confirm, or call the office to change it.",
+    "hash": "3dcac1a8dd58",
+    "file": "narration/message-real-clinic-text.mp3"
+  },
+  "explain-real-clinic-text": {
+    "tier": 2,
+    "text": "This is a normal reminder. It doesn't rush you, ask for money, or ask you to tap a link. Replying C only confirms an appointment you already made.",
+    "hash": "9cc4dd9df8e0",
+    "file": "narration/explain-real-clinic-text.mp3"
+  },
+  "message-real-order-text": {
+    "tier": 1,
+    "text": "From Northwind Market. Northwind Market: Your order #48213 was delivered today at 2:14 PM. Questions? Open the Northwind Market app.",
+    "hash": "07d49f3a91e6",
+    "file": "narration/message-real-order-text.mp3"
+  },
+  "message-real-statement-email": {
+    "tier": 1,
+    "text": "From Bluebird Bank <statements@bluebirdbank.com>. Subject: Your October statement is ready. Your October statement is ready. Sign in to the Bluebird Bank app or website the way you normally do to view it. We will never ask for your password by email.",
+    "hash": "657a7770b8c2",
+    "file": "narration/message-real-statement-email.mp3"
+  },
+  "message-real-library-text": {
+    "tier": 1,
+    "text": "From Maple Street Library. Maple Street Library: your hold is ready for pickup until Nov 3.",
+    "hash": "7e00915b0288",
+    "file": "narration/message-real-library-text.mp3"
+  },
+  "message-real-water-notice": {
+    "tier": 1,
+    "text": "From Greenfield Water. Greenfield Water: planned maintenance on Oct 29, 9 AM to 1 PM may briefly reduce water pressure. No action needed.",
+    "hash": "3602e339be49",
+    "file": "narration/message-real-water-notice.mp3"
+  },
+  "message-real-code-text": {
+    "tier": 1,
+    "text": "From Bluebird Bank. Bluebird Bank: Your code is 482913. Don't share it with anyone. We will never ask for it. If you didn't request this, call the number on your card.",
+    "hash": "26af3eee096d",
+    "file": "narration/message-real-code-text.mp3"
+  },
+  "explain-real-order-text": {
+    "tier": 2,
+    "text": "This is real. It only tells you something happened, and it sends you to the store's own app instead of a link.",
+    "hash": "dcf753118d1f",
+    "file": "narration/explain-real-order-text.mp3"
+  },
+  "explain-real-statement-email": {
+    "tier": 2,
+    "text": "This is real. There is no link to tap, it tells you to sign in the way you normally do, and it says the bank will never ask for your password by email.",
+    "hash": "d3f09a4ebd38",
+    "file": "narration/explain-real-statement-email.mp3"
+  },
+  "explain-real-library-text": {
+    "tier": 2,
+    "text": "This is real. It asks for nothing: no link, no payment, no personal details.",
+    "hash": "d3162d57e805",
+    "file": "narration/explain-real-library-text.mp3"
+  },
+  "explain-real-water-notice": {
+    "tier": 2,
+    "text": "This is real. It gives information and says no action is needed. Scams almost always want you to do something, and fast.",
+    "hash": "647f6baae04b",
+    "file": "narration/explain-real-water-notice.mp3"
+  },
+  "explain-real-code-text": {
+    "tier": 2,
+    "text": "This is real only because you asked for a code, for example while signing in. The code is for you to type in yourself. Scammers sometimes call and ask you to read a code like this to them. Never share it with anyone.",
+    "hash": "a852aeb7a569",
+    "file": "narration/explain-real-code-text.mp3"
+  },
+  "explain-real-clinic-call": {
+    "tier": 2,
+    "text": "This is real. The caller gives information, asks for nothing, and tells you to use the number on your appointment card if you need to change anything.",
+    "hash": "034f1a365cd9",
+    "file": "narration/explain-real-clinic-call.mp3"
+  },
+  "explain-real-pharmacy-call": {
+    "tier": 2,
+    "text": "This is real. The caller asks for nothing over the phone and tells you to bring your photo ID in person.",
+    "hash": "f24121ac2094",
+    "file": "narration/explain-real-pharmacy-call.mp3"
+  },
+  "explain-real-bankfraud-call": {
+    "tier": 2,
+    "text": "This call is real: the caller asks for nothing and tells you to call the number on your card. Even so, hanging up and calling the number on the back of your card is still the safest move, because caller ID can be faked.",
+    "hash": "319fc451b4af",
+    "file": "narration/explain-real-bankfraud-call.mp3"
+  },
+  "explain-fake-sites-bank-address-01": {
+    "tier": 2,
+    "text": "Scammers put a real company's name at the start of a fake address. What counts is the last name before the first slash, like bluebirdbank.com. When in doubt, type your bank's address yourself or use a saved bookmark.",
+    "hash": "b066deb976cc",
+    "file": "narration/explain-fake-sites-bank-address-01.mp3"
+  },
+  "explain-fake-sites-lookalike-shop-01": {
+    "tier": 2,
+    "text": "Fake shops copy a real store's name with one or two letters changed. They often show up in ads with prices that seem too good to be true. Slow down and read the address letter by letter.",
+    "hash": "8cfbf348cefb",
+    "file": "narration/explain-fake-sites-lookalike-shop-01.mp3"
+  },
+  "explain-fake-sites-https-lock-01": {
+    "tier": 2,
+    "text": "The lock icon only means the connection is private. It does not mean the website is honest. Always check the address itself, or use a bookmark you saved.",
+    "hash": "f4c16b034c3c",
+    "file": "narration/explain-fake-sites-https-lock-01.mp3"
+  },
+  "explain-phishing-bank-text-01": {
+    "tier": 2,
+    "text": "Scammers send texts that look like they come from your bank. They try to scare you into tapping a link. The safe move is to ignore the link and call the number on the back of your bank card.",
+    "hash": "e3ce71fb3949",
+    "file": "narration/explain-phishing-bank-text-01.mp3"
+  },
+  "teach-payment": {
+    "tier": 1,
+    "text": "Gift cards, wires and crypto. Demands to pay in unusual ways that cannot be reversed. Three warning signs. Anyone who tells you to pay with gift cards is a scammer. Wire transfers and crypto payments cannot be cancelled or refunded. They tell you what to say to the cashier or bank teller. The safe move. STOP: never buy gift cards or send a wire to resolve a problem. SPOT: real businesses and agencies never demand payment in gift cards or crypto. BLOCK: refuse their payment instructions and speak with someone you trust in person.",
+    "hash": "d442c705b560",
+    "file": "narration/teach-payment.mp3"
+  },
+  "teach-emergency": {
+    "tier": 1,
+    "text": "Family emergency calls. Urgent calls claiming a grandchild or relative is hurt, arrested, or in trouble. Three warning signs. The caller sounds panicked and begs you not to tell anyone in the family. They demand bail money, hospital fees, or lawyer fees right away. They may use an AI clone of your loved one's voice. The safe move. STOP: take a slow breath. Panic is their main weapon. SPOT: secrecy and extreme rush are signs of a family emergency scam. BLOCK: hang up and call your relative directly on their normal number.",
+    "hash": "f8b37b48f24b",
+    "file": "narration/teach-emergency.mp3"
+  },
+  "teach-government": {
+    "tier": 1,
+    "text": "Government and Medicare callers. Callers pretending to be Social Security, Medicare, or law enforcement. Three warning signs. They threaten arrest, frozen benefits, or legal action if you don't pay. They ask for your Medicare number, Social Security number, or bank details. They claim your number or card has been suspended. The safe move. STOP: hang up the phone. Government agencies do not call to threaten you. SPOT: Medicare and Social Security always contact you by official mail first. BLOCK: look up the official agency number yourself if you have concerns.",
+    "hash": "087895dbfb67",
+    "file": "narration/teach-government.mp3"
+  },
+  "explain-phishing-package-fee-01": {
+    "tier": 2,
+    "text": "Fake delivery emails are very common, especially around holidays. The small fee seems harmless, but the real goal is your card number. If you are expecting a package, check the tracking on the store's website yourself.",
+    "hash": "5e1679c92016",
+    "file": "narration/explain-phishing-package-fee-01.mp3"
+  },
+  "explain-phishing-streaming-payment-01": {
+    "tier": 2,
+    "text": "This email looks like a normal billing notice, but it wants your password and card details. Scammers copy real company logos and wording. If you are worried about a payment, open the app or the website yourself and check your account there.",
+    "hash": "5ca39a0721e1",
+    "file": "narration/explain-phishing-streaming-payment-01.mp3"
+  },
+  "explain-phone-techsupport-01": {
+    "tier": 2,
+    "text": "Tech companies don't call you to say your computer has a virus. The caller creates panic so you follow their steps without thinking. Hanging up is always allowed.",
+    "hash": "efc5203888e6",
+    "file": "narration/explain-phone-techsupport-01.mp3"
+  },
+  "explain-phone-grandchild-01": {
+    "tier": 2,
+    "text": "Scammers pretend to be a family member in a panic and ask you to keep it secret. Secrecy and gift cards are two big warning signs. Hang up and call your family member on a number you already know.",
+    "hash": "b3a126c7f5ef",
+    "file": "narration/explain-phone-grandchild-01.mp3"
+  },
+  "explain-phone-benefits-01": {
+    "tier": 2,
+    "text": "Scammers pretend to be from the government and threaten to take away something you depend on. Fear makes it hard to think. Real offices send letters, give you time, and never ask for gift cards.",
+    "hash": "f50ef4b71512",
+    "file": "narration/explain-phone-benefits-01.mp3"
+  },
+  "explain-popups-virus-call-01": {
+    "tier": 2,
+    "text": "Fake virus pop-ups are made to look scary so you call the number. The person who answers will ask for money or for access to your computer. Close the window. If it won't close, restart your computer.",
+    "hash": "6a7889944b8e",
+    "file": "narration/explain-popups-virus-call-01.mp3"
+  },
+  "explain-popups-fake-update-01": {
+    "tier": 2,
+    "text": "Fake update pop-ups trick you into downloading a harmful program. Real updates come from your computer's settings or from the app you already use. If a website says you need an update, close it and check your settings yourself.",
+    "hash": "818948fc813c",
+    "file": "narration/explain-popups-fake-update-01.mp3"
+  },
+  "explain-popups-prize-01": {
+    "tier": 2,
+    "text": "Prize pop-ups promise something big so you hand over your card details. If you have to pay to get a prize, it isn't a prize. Close the window.",
+    "hash": "9e73e87b03ed",
+    "file": "narration/explain-popups-prize-01.mp3"
+  },
+  "explain-quishing-parking-meter-01": {
+    "tier": 2,
+    "text": "A QR code is just a link in disguise. You can't tell where it goes by looking at it. Fake stickers on parking meters send people to fake payment pages that steal card numbers.",
+    "hash": "5ae77bb9038b",
+    "file": "narration/explain-quishing-parking-meter-01.mp3"
+  },
+  "explain-quishing-restaurant-menu-01": {
+    "tier": 2,
+    "text": "Not every QR code is a scam. This one comes from a place you trust, a person confirmed it, and you checked the address before opening. Even so, a menu should never ask for your card number or password.",
+    "hash": "372db38f265e",
+    "file": "narration/explain-quishing-restaurant-menu-01.mp3"
+  },
+  "explain-quishing-package-email-01": {
+    "tier": 2,
+    "text": "Scammers put QR codes in emails because the hidden link is harder to check. Scanning it on your phone can open a fake page that asks for your card or password. When in doubt, skip the code and check your orders yourself.",
+    "hash": "b6c4798015d9",
+    "file": "narration/explain-quishing-package-email-01.mp3"
+  },
+  "teach-strangers": {
+    "tier": 1,
+    "text": "Messages from strangers. Friendly wrong-number texts, online friends, and unsolicited investment tips. Three warning signs. A friendly stranger texts by \"mistake\" and tries to start a casual conversation. After building trust, they bring up an amazing investment or crypto opportunity. They ask you to move your conversation to a different chat app. The safe move. STOP: do not reply to friendly texts from numbers you do not know. SPOT: anyone online offering guaranteed investment returns is trying to steal your money. BLOCK: block the sender's number and delete the conversation.",
+    "hash": "e2ad07064e45",
+    "file": "narration/teach-strangers.mp3"
+  },
+  "teach-prizes": {
+    "tier": 1,
+    "text": "Prizes, charities and sweepstakes. Notices claiming you won a lottery or sweepstakes you never entered. Three warning signs. You are told you won a contest, lottery, or sweepstakes you never entered. They insist you must pay taxes, shipping, or fees before receiving your prize. They push you to donate immediately to an emotional or unfamiliar charity. The safe move. STOP: remember that you cannot win a contest or lottery you never entered. SPOT: if you have to pay money to collect a prize, it is a scam. BLOCK: delete the message and donate only directly to established charities you choose.",
+    "hash": "9c43b31f19df",
+    "file": "narration/teach-prizes.mp3"
+  },
+  "teach-shopping": {
+    "tier": 1,
+    "text": "Shopping and delivery scams. Fake online store deals, delivery problem alerts, and marketplace tricks. Three warning signs. Popular items are advertised at impossibly low prices on unfamiliar websites. A text says a delivery is held until you pay a small fee or update your address. A buyer or seller insists on paying outside the official marketplace system. The safe move. STOP: do not click links in unexpected package delivery notices. SPOT: prices far below retail on unknown websites usually mean fake goods or theft. BLOCK: track your packages directly through the seller's official website.",
+    "hash": "7de95ac791fc",
+    "file": "narration/teach-shopping.mp3"
+  },
+  "teach-credentials": {
+    "tier": 1,
+    "text": "Passwords and verification codes. Tricks to get you to hand over one-time security codes, passwords, or PINs. Three warning signs. A caller or message asks you to read back a six-digit code sent to your phone. The message claims your account will be locked unless you verify your password. They pretend to be fraud security while secretly attempting to log into your account. The safe move. STOP: never read or type a verification code for anyone who contacts you. SPOT: one-time codes are secret keys for you alone; companies never ask for them. BLOCK: hang up and change your password on the official website if worried.",
+    "hash": "f763426b0eae",
+    "file": "narration/teach-credentials.mp3"
+  },
+  "teach-recovery": {
+    "tier": 1,
+    "text": "If you think you've been scammed. Clear, calm steps to take right away to protect your accounts and money. Three warning signs. Acting in the first hour can stop bank transfers and prevent further loss. Tell someone you trust right away; feeling embarrassed only helps the scammer. Beware of \"recovery services\" that promise to get your lost money back for a fee. The safe move. STOP: cut off contact with the scammer immediately and take a calm breath. SPOT: anyone charging an upfront fee to recover stolen funds is a recovery scammer. BLOCK: call your bank's official fraud department immediately and report to the FTC.",
+    "hash": "a89bba008c94",
+    "file": "narration/teach-recovery.mp3"
+  },
+  "message-credentials-urgent-code-01": {
+    "tier": 1,
+    "text": "From +1 (800) 555-0133. Bluebird Bank Security Alert: Your one-time sign-in code is 591024. Our staff will never ask you for this code. A caller claims: \"Read me the 6-digit code we texted you so we can secure your account.\" They say your account will be deleted if you do not cooperate immediately.",
+    "hash": "3f7fd04a5670",
+    "file": "narration/message-credentials-urgent-code-01.mp3"
+  },
+  "message-credentials-order-unauthorized-01": {
+    "tier": 1,
+    "text": "You receive a genuine alert that someone logged into your email from another state. Put these security steps in order: Put these steps in order: Change your email account password to a strong, new passphrase. Open a new browser window and type the official email service address yourself. Sign out of all other active sessions and devices in security settings. Check your account recovery settings to ensure your phone and backup email are still yours.",
+    "hash": "0b4959cf961d",
+    "file": "narration/message-credentials-order-unauthorized-01.mp3"
+  },
+  "message-emergency-order-grandchild-01": {
+    "tier": 1,
+    "text": "A weeping caller says your grandchild was arrested and needs bail money wired secretly. Put these steps in order: Put these steps in order: Hang up the call to break their emotional panic and pressure. Call your grandchild directly on their normal cell phone number. If they don't answer, call their parents or another relative to check. Never wire money or send gift cards to a stranger claiming to be a lawyer or police officer.",
+    "hash": "34ca9de8239d",
+    "file": "narration/message-emergency-order-grandchild-01.mp3"
+  },
+  "message-government-order-medicare-01": {
+    "tier": 1,
+    "text": "A caller says they are from Medicare and your benefits will be cancelled unless you give your card number. Put these steps in order: Put these steps in order: Look up the official Medicare phone number on your red, white, and blue card or at Medicare.gov. Hang up immediately. Government agencies do not call out of the blue to threaten benefits. Call official Medicare directly if you have any genuine concerns about your account. Report the scam phone number to the Federal Trade Commission.",
+    "hash": "9c5e6bb1532b",
+    "file": "narration/message-government-order-medicare-01.mp3"
+  },
+  "message-payment-giftcard-power-01": {
+    "tier": 1,
+    "text": "From +1 (800) 555-0192. Northwind Energy Notice: Your power will be cut off in 1 hour due to an unpaid balance of $120. To avoid disconnection, you must purchase a $120 store gift card and call (800) 555-0192 with the numbers on the back.",
+    "hash": "88552944b452",
+    "file": "narration/message-payment-giftcard-power-01.mp3"
+  },
+  "message-payment-order-giftcard-01": {
+    "tier": 1,
+    "text": "A caller says you must pay an urgent fee with store gift cards immediately. Put the safe steps in order: Put these steps in order: Remind yourself that no legitimate business or government agency accepts gift cards. Block the caller's phone number so they cannot harass you again. Hang up the phone immediately without arguing or explaining. Verify your account status by looking up the company's real number yourself.",
+    "hash": "7142a4006604",
+    "file": "narration/message-payment-order-giftcard-01.mp3"
+  },
+  "message-recovery-first-steps-01": {
+    "tier": 1,
+    "text": "You realize you just gave your card number to a scammer 15 minutes ago. What should you do first? Choice 1: Call your bank immediately using the number on the back of your card.. Choice 2: Search online for an asset recovery service to trace the stolen money..",
+    "hash": "a2b846202805",
+    "file": "narration/message-recovery-first-steps-01.mp3"
+  },
+  "message-recovery-order-money-01": {
+    "tier": 1,
+    "text": "You just sent money to someone you now suspect was a scammer. Put the first-hour steps in order: Put these steps in order: Gather receipts, transaction dates, and the scammer's contact details. Call your bank or card company's fraud department right away to cancel or freeze the transfer. File an official fraud report at ReportFraud.ftc.gov. Tell a trusted family member or friend so you have support and aren't dealing with it alone.",
+    "hash": "67292839a3ee",
+    "file": "narration/message-recovery-order-money-01.mp3"
+  },
+  "message-recovery-order-password-01": {
+    "tier": 1,
+    "text": "You accidentally entered your main password on a look-alike fake website. Put these recovery steps in order: Put these steps in order: Turn on two-factor authentication (an extra verification code) on your account. Change the password on that account right now from an official, safe device. Check your recent login history and sign out of all active sessions. Update any other accounts that used the same or a similar password.",
+    "hash": "d52c61adda2f",
+    "file": "narration/message-recovery-order-password-01.mp3"
+  },
+  "message-shopping-fake-store-01": {
+    "tier": 1,
+    "text": "You want to buy a new electric kettle from Maple Market. Which web address is the real store? Choice 1: maplemarket.com. Choice 2: maplemarket-clearance-sale-90off.shop.",
+    "hash": "bf3fecb3022a",
+    "file": "narration/message-shopping-fake-store-01.mp3"
+  },
+  "message-strangers-wrong-number-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0184. Hi David, are we still meeting at the tennis club at three? Oh sorry, wrong number! You seem very kind though, my name is Linda. Do you live around here? I love chatting with new friends online.",
+    "hash": "ad4d68df6788",
+    "file": "narration/message-strangers-wrong-number-01.mp3"
+  },
+  "explain-credentials-urgent-code-01": {
+    "tier": 2,
+    "text": "One-time verification codes are digital keys to your account. When scammers try to break in, the bank sends YOU the code. Scammers then call and ask you to read it to them. Never share a code with anyone.",
+    "hash": "a76ab4741d9f",
+    "file": "narration/explain-credentials-urgent-code-01.mp3"
+  },
+  "explain-credentials-order-unauthorized-01": {
+    "tier": 2,
+    "text": "When an unauthorized login happens, go directly to the service yourself. Change your password, kick off all active sessions, and verify your backup recovery contact information.",
+    "hash": "3cdf20d0524c",
+    "file": "narration/explain-credentials-order-unauthorized-01.mp3"
+  },
+  "explain-emergency-order-grandchild-01": {
+    "tier": 2,
+    "text": "Family emergency scams succeed by keeping grandparents in a state of terror. Hanging up and calling your grandchild directly almost always reveals they are safe at school or work.",
+    "hash": "cb8c21a4e6dc",
+    "file": "narration/explain-emergency-order-grandchild-01.mp3"
+  },
+  "explain-government-order-medicare-01": {
+    "tier": 2,
+    "text": "Medicare and Social Security communicate primarily through official mail. They never call to threaten suspension of benefits or demand payment over the phone.",
+    "hash": "b285965dd67c",
+    "file": "narration/explain-government-order-medicare-01.mp3"
+  },
+  "explain-payment-giftcard-power-01": {
+    "tier": 2,
+    "text": "Real utility companies send bills by mail and offer many normal ways to pay. They never tell you to buy gift cards or threaten shutoff within one hour. Hang up or delete the text.",
+    "hash": "3b0be7bf4533",
+    "file": "narration/explain-payment-giftcard-power-01.mp3"
+  },
+  "explain-payment-order-giftcard-01": {
+    "tier": 2,
+    "text": "Hanging up is always the safest first move against pressure tactics. Once the call is ended, you have the calm space to think clearly and verify facts.",
+    "hash": "056002fee8d1",
+    "file": "narration/explain-payment-order-giftcard-01.mp3"
+  },
+  "explain-recovery-first-steps-01": {
+    "tier": 2,
+    "text": "In the first hour after a scam, speed is everything. Call your bank or card issuer using the phone number printed on your card. They can freeze cards, dispute charges, and secure your account.",
+    "hash": "d1e1bf322fbf",
+    "file": "narration/explain-recovery-first-steps-01.mp3"
+  },
+  "explain-recovery-order-money-01": {
+    "tier": 2,
+    "text": "In the first hour after losing money to a scammer, contacting your financial institution immediately gives you the best chance of reversing charges or freezing your accounts. Never wait.",
+    "hash": "c71a1ecf9cbc",
+    "file": "narration/explain-recovery-order-money-01.mp3"
+  },
+  "explain-recovery-order-password-01": {
+    "tier": 2,
+    "text": "When a password is leaked, act fast to change it before the scammer takes over your account. Then sign out other sessions and secure other accounts that shared the password.",
+    "hash": "60bea9f646d5",
+    "file": "narration/explain-recovery-order-password-01.mp3"
+  },
+  "explain-shopping-fake-store-01": {
+    "tier": 2,
+    "text": "Scammers create look-alike shopping sites that advertise 80% to 90% discounts on popular goods. The items never arrive, and the criminals steal your credit card information. Always verify the address.",
+    "hash": "5232d5fe5039",
+    "file": "narration/explain-shopping-fake-store-01.mp3"
+  },
+  "explain-strangers-wrong-number-01": {
+    "tier": 2,
+    "text": "Wrong-number scams start with a polite text to get you talking. Once a connection is made, the stranger turns to money, sob stories, or fake investments. Never reply to strangers who text you by mistake.",
+    "hash": "bdd17b4558da",
+    "file": "narration/explain-strangers-wrong-number-01.mp3"
+  },
+  "message-credentials-fake-reset-01": {
+    "tier": 1,
+    "text": "You receive an email about a password reset that you did not initiate. Which message shows how legitimate companies handle reset requests? Choice 1: \"A password reset was requested. If you requested this, click here. If you did not make this request, you can safely ignore this message—your account remains secure.\". Choice 2: \"SECURITY BREACH! An unauthorized device attempted login. Click this link within 10 minutes to verify your identity or your account will be permanently closed.\".",
+    "hash": "dfb897ffed3e",
+    "file": "narration/message-credentials-fake-reset-01.mp3"
+  },
+  "message-emergency-accident-wire-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0184. URGENT NOTICE: This is Nurse Martinez at the trauma center. Your nephew Alex was brought into the emergency room following a serious car accident and requires immediate care. The hospital requires an immediate medical deposit of $2,400 before the surgical suite can be opened. Send the funds via digital transfer to billing@county-trauma-care.org right now. Do not call his mother as she is not at home.",
+    "hash": "51378d23dbb8",
+    "file": "narration/message-emergency-accident-wire-01.mp3"
+  },
+  "message-fake-sites-login-url-01": {
+    "tier": 1,
+    "text": "You want to log into your online bank account. Which website address is legitimate? Choice 1: online.bluebirdbank.com. Choice 2: bluebirdbank.account-security-update.com.",
+    "hash": "95463a2b7053",
+    "file": "narration/message-fake-sites-login-url-01.mp3"
+  },
+  "message-government-irs-tax-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0163. INTERNAL REVENUE SERVICE LEGAL NOTICE: Your tax file shows an unpaid delinquent assessment of $1,840. A federal arrest warrant has been signed and local deputies will visit your residence within 2 hours. To cancel the warrant, settle immediately at irs-tax-settlement-gov.com or call our field desk.",
+    "hash": "a4270b9263ef",
+    "file": "narration/message-government-irs-tax-01.mp3"
+  },
+  "message-payment-wire-contractor-01": {
+    "tier": 1,
+    "text": "From Apex Remodeling <billing@apex-remodel-pay.com>. Subject: Urgent: Updated payment instructions for your remodel deposit. Hello Robert, regarding your kitchen remodeling project scheduled to begin next Monday: Our primary bank account is undergoing an annual audit, so please do not use the account details on your contract. Please wire the $3,500 deposit to our new account today before 4:00 PM, or we will have to reschedule your build date by two months. Do not call our office line as our phone system is down today.",
+    "hash": "b00157e0a1ce",
+    "file": "narration/message-payment-wire-contractor-01.mp3"
+  },
+  "message-payment-method-choice-01": {
+    "tier": 1,
+    "text": "You are purchasing a gently used riding lawnmower from an online seller in your county. Which payment method protects you? Choice 1: Inspect the mower in person first, or pay with a credit card that has purchase protection. Choice 2: Send an immediate bank wire transfer or gift card PINs so the seller holds it for you.",
+    "hash": "a25c279668e7",
+    "file": "narration/message-payment-method-choice-01.mp3"
+  },
+  "message-phishing-toll-notice-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0196. State Highway Toll Services: Records show your vehicle has an outstanding unpaid toll charge of $5.45. To prevent an immediate $50 penalty and driver license suspension, settle your balance at state-tolls-direct-pay.com.",
+    "hash": "3d085f1dde82",
+    "file": "narration/message-phishing-toll-notice-01.mp3"
+  },
+  "message-popups-security-alert-01": {
+    "tier": 1,
+    "text": "From System Security Center. CRITICAL WARNING: Your device has been locked due to suspicious spyware infection. Do not restart or turn off your computer or your hard drive will be completely erased. Call Windows certified engineers immediately at (800) 555-0199 to unlock your computer. If you close this window, your banking logins will be compromised across the internet.",
+    "hash": "fa1e18c53606",
+    "file": "narration/message-popups-security-alert-01.mp3"
+  },
+  "message-prizes-sweepstakes-letter-01": {
+    "tier": 1,
+    "text": "From Northwind Sweepstakes <claims@northwind-payouts.net>. Subject: OFFICIAL NOTICE: Your $500,000 winning check is ready for delivery. Congratulations! Your email address was selected in our annual grand prize drawing. You have won a verified cash award of $500,000 and a new luxury vehicle. Federal lottery regulations require an upfront state processing and delivery fee of $450 before we can dispatch the armored courier. Please send this $450 fee today using store gift cards or money vouchers to our claims agent.",
+    "hash": "fab8c24b64c9",
+    "file": "narration/message-prizes-sweepstakes-letter-01.mp3"
+  },
+  "message-prizes-charity-fund-01": {
+    "tier": 1,
+    "text": "Following a severe flood, you want to donate $50 to help affected families. Which donation method is safe? Choice 1: Visit an established, accredited charity website that you look up yourself on CharityNavigator.org or give.org. Choice 2: Send $50 through a peer-to-peer payment app to an individual account listed in an emotional social media message.",
+    "hash": "7f83fee36b97",
+    "file": "narration/message-prizes-charity-fund-01.mp3"
+  },
+  "message-quishing-utility-bill-01": {
+    "tier": 1,
+    "text": "Your monthly water bill arrives in your physical postal mailbox inside an official utility envelope. The paper bill has your correct address and account number, and shows a printed QR code in the payment box that reads: 'Scan to pay online at greenfieldwater.gov'.",
+    "hash": "18cba8d69ef3",
+    "file": "narration/message-quishing-utility-bill-01.mp3"
+  },
+  "message-quishing-parking-sticker-01": {
+    "tier": 1,
+    "text": "You park in a public downtown parking space. Next to the official parking instructions, someone has affixed a shiny paper sticker reading: 'QUICK PARK - SCAN TO PAY VIA PHONE' over the metal sign plate.",
+    "hash": "19a826f9b26a",
+    "file": "narration/message-quishing-parking-sticker-01.mp3"
+  },
+  "message-quishing-table-tent-01": {
+    "tier": 1,
+    "text": "You are sitting inside a cafe you visit regularly. Each table features a clean acrylic stand holding a printed card: 'Join our Coffee Club for 10% off - Scan to sign up with email'. The server mentions the discount when bringing your mug.",
+    "hash": "b39526033857",
+    "file": "narration/message-quishing-table-tent-01.mp3"
+  },
+  "message-quishing-package-label-01": {
+    "tier": 1,
+    "text": "You discover a bright yellow paper slip taped to your front door stating a package could not be delivered. There is no delivery company logo or package tracking number, only a large QR code saying: 'SCAN TO RESCHEDULE OR RETURN TO SENDER'.",
+    "hash": "15b43b0e9314",
+    "file": "narration/message-quishing-package-label-01.mp3"
+  },
+  "message-quishing-flyer-crypto-01": {
+    "tier": 1,
+    "text": "A photocopied flyer taped to a telephone pole near your bus stop reads: 'EMERGENCY SENIOR UTILITY RELIEF - GET UP TO $1,200 IN DIRECT AID. Scan the QR code with your phone to apply in 60 seconds.'",
+    "hash": "c3915f1c8aa9",
+    "file": "narration/message-quishing-flyer-crypto-01.mp3"
+  },
+  "message-shopping-overpayment-check-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0129. Hello, I am glad to purchase your dining table set for the listed $400. My office accountant accidentally made out the cashier's check for $1,200 instead of $400. Please deposit the $1,200 check, keep $100 for your trouble, and wire the remaining $700 back to my movers today. The moving truck will arrive once you confirm the wire transfer.",
+    "hash": "44cc059bcb4a",
+    "file": "narration/message-shopping-overpayment-check-01.mp3"
+  },
+  "message-shopping-clearance-ad-01": {
+    "tier": 1,
+    "text": "A sponsored social media ad shows a $400 outdoor winter jacket on sale for $39 with free shipping. Which action is safe? Choice 1: Ignore the ad and search for the jacket directly on the manufacturer's official website. Choice 2: Click the link and purchase immediately using your debit card before the 10-minute timer expires.",
+    "hash": "49157604661b",
+    "file": "narration/message-shopping-clearance-ad-01.mp3"
+  },
+  "message-strangers-friendly-chat-01": {
+    "tier": 1,
+    "text": "From +1 (555) 0147. Good morning! It has been so lovely chatting with you this past week. My uncle who works as a chief investment director showed me a private trading portal with guaranteed 15% daily returns. I already withdrew $6,000 this morning! I can guide you if you send $500 to my special wallet link today. Let me know within the hour before the European markets close!",
+    "hash": "5651b48a99cd",
+    "file": "narration/message-strangers-friendly-chat-01.mp3"
+  },
+  "message-strangers-job-offer-01": {
+    "tier": 1,
+    "text": "You receive a text offering a $45/hour work-from-home administrative job without an interview. Which response protects you? Choice 1: Delete the text, because real companies do not hire strangers via random text messages. Choice 2: Accept the job, deposit the $2,500 check they mail you for home office equipment, and wire the leftover money back.",
+    "hash": "43df80208cac",
+    "file": "narration/message-strangers-job-offer-01.mp3"
+  },
+  "message-real-pharmacy-refill-text": {
+    "tier": 1,
+    "text": "From Maple Street Pharmacy. Maple Street Pharmacy: Prescription #64019 is ready for pickup. Store hours: Mon-Sat 9am-7pm. Reply STOP to cancel text reminders.",
+    "hash": "dab2a8e64515",
+    "file": "narration/message-real-pharmacy-refill-text.mp3"
+  },
+  "explain-real-pharmacy-refill-text": {
+    "tier": 2,
+    "text": "This message is legitimate. It provides status information only, asks for no payment or confidential credentials, and includes standard carrier opt-out instructions.",
+    "hash": "fa8e9745a951",
+    "file": "narration/explain-real-pharmacy-refill-text.mp3"
+  },
+  "message-real-card-fraud-alert": {
+    "tier": 1,
+    "text": "From Bluebird Bank Fraud Alert. Bluebird Bank: Did you attempt a $42.50 charge at Maple Market today? Reply YES if this was you, or NO if you did not recognize it. We will never ask for your password.",
+    "hash": "7993053d2f6b",
+    "file": "narration/message-real-card-fraud-alert.mp3"
+  },
+  "explain-real-card-fraud-alert": {
+    "tier": 2,
+    "text": "This is a legitimate two-way fraud verification message. It requests a simple YES or NO reply, includes no suspicious links, and explicitly reminds you that the bank will never ask for your password.",
+    "hash": "f355c0bdbde7",
+    "file": "narration/explain-real-card-fraud-alert.mp3"
+  },
+  "message-real-grocery-delivery-email": {
+    "tier": 1,
+    "text": "From Northwind Market <receipts@northwindmarket.com>. Subject: Receipt for your order #8921. Thank you for shopping with Northwind Market. Your delivery was completed today at 1:45 PM. Your receipt total is $38.20. View your full itemized order history inside the Northwind Market app.",
+    "hash": "1fc71b8e9af8",
+    "file": "narration/message-real-grocery-delivery-email.mp3"
+  },
+  "explain-real-grocery-delivery-email": {
+    "tier": 2,
+    "text": "This email is an informational purchase receipt. It asks for no passwords or payment updates, and directs you to view full records inside the official app you already have installed.",
+    "hash": "8bb607562923",
+    "file": "narration/explain-real-grocery-delivery-email.mp3"
+  },
+  "explain-credentials-fake-reset-01": {
+    "tier": 2,
+    "text": "Authentic web services never threaten to close or suspend accounts if you ignore an unexpected password reset notice. If you ever feel concerned about account safety, open a browser tab and sign into your account directly without clicking links in emails.",
+    "hash": "67f14cc346c7",
+    "file": "narration/explain-credentials-fake-reset-01.mp3"
+  },
+  "explain-emergency-accident-wire-01": {
+    "tier": 2,
+    "text": "No legitimate emergency medical facility demands cash transfers or app payments over SMS before treating emergency patients. Always call your family member or their immediate relatives on their real phone numbers.",
+    "hash": "4d519d7f4702",
+    "file": "narration/explain-emergency-accident-wire-01.mp3"
+  },
+  "explain-fake-sites-login-url-01": {
+    "tier": 2,
+    "text": "Always inspect the words immediately before the `.com` or `.org`. Scammers frequently put a trusted name like 'bluebirdbank' at the start of their own domain to trick your eyes.",
+    "hash": "4e965e72948e",
+    "file": "narration/explain-fake-sites-login-url-01.mp3"
+  },
+  "explain-government-irs-tax-01": {
+    "tier": 2,
+    "text": "The IRS never demands immediate payment over the phone or text, and never threatens immediate arrest by local police. All legitimate IRS notices arrive through the U.S. Mail.",
+    "hash": "3c6e4b752dae",
+    "file": "narration/explain-government-irs-tax-01.mp3"
+  },
+  "explain-payment-wire-contractor-01": {
+    "tier": 2,
+    "text": "Scammers hack or spoof contractor email accounts to redirect home renovation deposits to fraudulent accounts. Never wire funds based on an email change without verbally verifying with the contractor on a known phone number.",
+    "hash": "2a2ab67b805e",
+    "file": "narration/explain-payment-wire-contractor-01.mp3"
+  },
+  "explain-payment-method-choice-01": {
+    "tier": 2,
+    "text": "Legitimate private sales allow inspection before payment. Wire transfers, peer-to-peer cash apps, and gift cards offer zero fraud refund protection once sent.",
+    "hash": "6d4fa9e20248",
+    "file": "narration/explain-payment-method-choice-01.mp3"
+  },
+  "explain-phishing-toll-notice-01": {
+    "tier": 2,
+    "text": "Toll road smishing scams send mass texts pretending an unpaid toll will lead to license suspension. Real state toll agencies mail violation notices to the vehicle owner's address. Never click links in toll text messages.",
+    "hash": "a7fd29df96b8",
+    "file": "narration/explain-phishing-toll-notice-01.mp3"
+  },
+  "explain-popups-security-alert-01": {
+    "tier": 2,
+    "text": "Browser security pop-ups cannot detect viruses on your machine; they are just web pages styled to look like system warnings. Never call phone numbers shown in web pop-ups. Simply restart your computer or force-close your browser.",
+    "hash": "a8c49d99c3e9",
+    "file": "narration/explain-popups-security-alert-01.mp3"
+  },
+  "explain-prizes-sweepstakes-letter-01": {
+    "tier": 2,
+    "text": "Legitimate sweepstakes never require winners to pay fees, taxes, or shipping upfront to collect prize money. If you have to pay money to get a prize, it is an advance-fee scam.",
+    "hash": "3aa9672d9f2c",
+    "file": "narration/explain-prizes-sweepstakes-letter-01.mp3"
+  },
+  "explain-prizes-charity-fund-01": {
+    "tier": 2,
+    "text": "Scammers exploit natural disasters by creating fake charities and emotional crowdfunding requests. Always look up charities independently through trusted evaluators like Charity Navigator or BBB Wise Giving Alliance.",
+    "hash": "ed17e29e9fdd",
+    "file": "narration/explain-prizes-charity-fund-01.mp3"
+  },
+  "explain-quishing-utility-bill-01": {
+    "tier": 2,
+    "text": "Printed QR codes on physical bills received through postal mail from your utility providers are standard and safe. Always make sure your phone's link preview matches the utility's official website before opening.",
+    "hash": "c8604acdd713",
+    "file": "narration/explain-quishing-utility-bill-01.mp3"
+  },
+  "explain-quishing-parking-sticker-01": {
+    "tier": 2,
+    "text": "Criminals place fake QR stickers on parking meters and signs to intercept payments. The code sends drivers to counterfeit sites that steal credit card numbers. Pay at the physical meter instead.",
+    "hash": "18b79abcf756",
+    "file": "narration/explain-quishing-parking-sticker-01.mp3"
+  },
+  "explain-quishing-table-tent-01": {
+    "tier": 2,
+    "text": "In-store promotional QR codes confirmed by staff in reputable businesses are safe. A customer loyalty program should only request basic contact info, never passwords or credit cards.",
+    "hash": "206b336a3779",
+    "file": "narration/explain-quishing-table-tent-01.mp3"
+  },
+  "explain-quishing-package-label-01": {
+    "tier": 2,
+    "text": "Scammers leave fake delivery notices on residential doors. Scanning the code connects to an imposter website that asks for personal details and payment card information to reschedule delivery.",
+    "hash": "9175666afc0c",
+    "file": "narration/explain-quishing-package-label-01.mp3"
+  },
+  "explain-quishing-flyer-crypto-01": {
+    "tier": 2,
+    "text": "Flyer scams target people looking for utility or financial assistance. Government programs never solicit grant applications through street flyers with QR codes. Contact local social services directly through verified government directories.",
+    "hash": "b3da6163bd7f",
+    "file": "narration/explain-quishing-flyer-crypto-01.mp3"
+  },
+  "explain-shopping-overpayment-check-01": {
+    "tier": 2,
+    "text": "Banks are required by law to make check funds available within a few days, but verifying a forged cashier's check can take weeks. When it bounces, you are legally responsible for all funds you wired away.",
+    "hash": "6de98e6bbf4f",
+    "file": "narration/explain-shopping-overpayment-check-01.mp3"
+  },
+  "explain-shopping-clearance-ad-01": {
+    "tier": 2,
+    "text": "Scammers buy social media ads promoting unbelievable discounts on brand-name products. Victims either receive counterfeit goods or nothing at all while having their payment cards compromised.",
+    "hash": "30636cc9d4ec",
+    "file": "narration/explain-shopping-clearance-ad-01.mp3"
+  },
+  "explain-strangers-friendly-chat-01": {
+    "tier": 2,
+    "text": "This is known as a relationship-investment scam. Criminals spend days acting as friendly pen pals before introducing a fraudulent crypto or trading platform. Never invest funds through links provided by strangers.",
+    "hash": "642c0bd8ea09",
+    "file": "narration/explain-strangers-friendly-chat-01.mp3"
+  },
+  "explain-strangers-job-offer-01": {
+    "tier": 2,
+    "text": "Fake check scams frequently disguise themselves as work-from-home job offers. When a counterfeit check bounces, the victim is held financially responsible by their bank for all withdrawn or wired money.",
+    "hash": "3196371d3464",
+    "file": "narration/explain-strangers-job-offer-01.mp3"
+  },
+  "remember-phishing": {
+    "tier": 3,
+    "text": "Remember. Don't tap links in surprise texts. Call your bank using the number on your card. State toll agencies send violation notices by postal mail, never text. Never pay road tolls through links sent in text messages. Check the sender's address, not just the name. Small surprise fees are a common trick. Track packages on the store's own website. Check the sender's full address. Don't sign in from email links. Check your account in the app instead.",
+    "hash": "e74332c8780b",
+    "file": "narration/remember-phishing.mp3"
+  },
+  "remember-fake-sites": {
+    "tier": 3,
+    "text": "Remember. Read the address from the end of the main name. Type the address yourself or use a bookmark. Look-alike addresses swap or add letters. Deals that seem too good to be true are a warning sign. Read web addresses from right to left right before the .com. Never trust a web address just because a bank name appears at the very beginning. A lock icon does not mean a site is safe. Check the address, not just the lock.",
+    "hash": "56fceea0de10",
+    "file": "narration/remember-fake-sites.mp3"
+  },
+  "remember-quishing": {
+    "tier": 3,
+    "text": "Remember. A QR code is a hidden link. Watch for stickers placed over real codes. Printed codes on official mail statements you receive are safe. Always check the website address preview on your phone before tapping open. Promotional codes confirmed by employees in real shops are safe. A loyalty discount should never ask for banking details or passwords. Check who put the code there. Look at the address preview before opening. A menu should never ask for passwords or card numbers. Skip QR codes in surprise emails. Check deliveries on the store's own site or app. Never scan adhesive stickers pasted onto public signs. Use the physical payment slot on the parking meter instead. Authentic delivery tags always feature official carrier logos and tracking numbers. Never scan anonymous paper slips left on your door. Government assistance programs never recruit through street flyers. Never scan anonymous QR codes posted in public spaces.",
+    "hash": "54db601c2b33",
+    "file": "narration/remember-quishing.mp3"
+  },
+  "remember-popups": {
+    "tier": 3,
+    "text": "Remember. Real tech companies don't make surprise virus calls. Never give a caller remote access to your computer. Never call a number from a pop-up. Close the window or restart your computer. Don't download updates from pop-ups. Update from your computer's settings instead. Real security alerts never tell you to call an 800 number. If your screen locks with warning sounds, restart your computer.",
+    "hash": "970cc052f0bb",
+    "file": "narration/remember-popups.mp3"
+  },
+  "remember-payment": {
+    "tier": 3,
+    "text": "Remember. No real utility company ever demands gift cards. Call the number on your real monthly bill if concerned. Hang up immediately on anyone demanding gift cards. Real agencies never accept gift cards. Never wire money or send gift cards to hold items from private sellers. Inspect expensive purchases in person before handing over money. Always call your contractor on a trusted number before wiring funds. Never follow bank account changes sent only by email.",
+    "hash": "63b3f5a2c847",
+    "file": "narration/remember-payment.mp3"
+  },
+  "remember-emergency": {
+    "tier": 3,
+    "text": "Remember. Always hang up and call your relative directly. Never let panic rush you into sending money. Hospitals never demand digital transfers by text before surgery. Call family directly on their known numbers to verify emergencies. \"Don't tell anyone\" is a warning sign. No real emergency is paid with gift cards. Call your family back on a number you know.",
+    "hash": "7f8db00ed3f9",
+    "file": "narration/remember-emergency.mp3"
+  },
+  "remember-government": {
+    "tier": 3,
+    "text": "Remember. The IRS sends letters by postal mail, never text messages. Real government agencies never threaten immediate arrest over text. Medicare never calls unexpectedly demanding card numbers. Hang up and call the number on your official card. Threats to cut off benefits are a warning sign. No government office takes gift cards. Call back on the number from your card or letter.",
+    "hash": "7407e1098b75",
+    "file": "narration/remember-government.mp3"
+  },
+  "remember-strangers": {
+    "tier": 3,
+    "text": "Remember. Do not reply to texts from strangers. Block and delete unexpected friendly messages. Never invest money through websites recommended by strangers. Any claim of guaranteed high returns is a scam. Never deposit a check from an employer you never met in person. Real employers send equipment directly, never money to wire.",
+    "hash": "6908783937ce",
+    "file": "narration/remember-strangers.mp3"
+  },
+  "remember-prizes": {
+    "tier": 3,
+    "text": "Remember. If you have to pay, it isn't a prize. Never enter card details in a pop-up. You never have to pay money upfront to claim a real prize. You cannot win a contest you never entered. Research charities independently before donating. Never send disaster donations to unknown individuals via mobile transfer apps.",
+    "hash": "5bb4c46b4288",
+    "file": "narration/remember-prizes.mp3"
+  },
+  "remember-shopping": {
+    "tier": 3,
+    "text": "Remember. Unbelievable discounts are almost always fake. Check the domain carefully before buying. Never accept a check for more than the selling price. Never wire back part of a check payment. Unbelievable social media discounts usually lead to counterfeit storefronts. Look up products directly on authorized retailer websites.",
+    "hash": "7fd64108d292",
+    "file": "narration/remember-shopping.mp3"
+  },
+  "remember-credentials": {
+    "tier": 3,
+    "text": "Remember. Never share verification codes with anyone. Banks never ask you for your one-time code. Legitimate password reset emails state that you can safely ignore them if unrequested. Never click password links in unexpected emails. Always navigate to account settings directly. Sign out all existing sessions after changing a password.",
+    "hash": "c6301f782671",
+    "file": "narration/remember-credentials.mp3"
+  },
+  "remember-recovery": {
+    "tier": 3,
+    "text": "Remember. Call your bank immediately using the number on your card. Beware of fake online recovery services. Call your bank immediately to stop transactions. Keep receipts and records of all scam messages. Change a compromised password immediately. Never reuse the same password across multiple accounts.",
+    "hash": "e8adcdcf02fb",
+    "file": "narration/remember-recovery.mp3"
+  }
+}

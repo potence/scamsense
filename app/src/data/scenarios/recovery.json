@@ -1,0 +1,72 @@
+[
+  {
+    "id": "recovery-first-steps-01",
+    "kind": "choicepair",
+    "topic": "recovery",
+    "difficulty": 1,
+    "title": "First move after being scammed",
+    "prompt": "You realize you just gave your card number to a scammer 15 minutes ago. What should you do first?",
+    "options": [
+      {
+        "id": "opt-bank",
+        "label": "Call your bank immediately using the number on the back of your card."
+      },
+      {
+        "id": "opt-search",
+        "label": "Search online for an asset recovery service to trace the stolen money."
+      }
+    ],
+    "correctId": "opt-bank",
+    "reasons": {
+      "opt-bank": "Calling your bank right away can freeze the card, reverse pending charges, and protect your account from more loss.",
+      "opt-search": "Online \"recovery companies\" are second-wave scammers who take upfront fees and recover nothing."
+    },
+    "explanation": "In the first hour after a scam, speed is everything. Call your bank or card issuer using the phone number printed on your card. They can freeze cards, dispute charges, and secure your account.",
+    "takeaways": [
+      "Call your bank immediately using the number on your card.",
+      "Beware of fake online recovery services."
+    ]
+  },
+  {
+    "id": "recovery-order-money-01",
+    "kind": "orderSteps",
+    "topic": "recovery",
+    "difficulty": 1,
+    "title": "First hour after sending money",
+    "prompt": "You just sent money to someone you now suspect was a scammer. Put the first-hour steps in order:",
+    "steps": [
+      "Gather receipts, transaction dates, and the scammer's contact details.",
+      "Call your bank or card company's fraud department right away to cancel or freeze the transfer.",
+      "File an official fraud report at ReportFraud.ftc.gov.",
+      "Tell a trusted family member or friend so you have support and aren't dealing with it alone."
+    ],
+    "correctOrder": [1, 0, 2, 3],
+    "whyFirstStepMatters": "Every minute counts when trying to stop an unauthorized transfer. Calling your bank immediately gives them the best chance of reversing a wire or freezing compromised cards before more money is lost.",
+    "explanation": "In the first hour after losing money to a scammer, contacting your financial institution immediately gives you the best chance of reversing charges or freezing your accounts. Never wait.",
+    "takeaways": [
+      "Call your bank immediately to stop transactions.",
+      "Keep receipts and records of all scam messages."
+    ]
+  },
+  {
+    "id": "recovery-order-password-01",
+    "kind": "orderSteps",
+    "topic": "recovery",
+    "difficulty": 2,
+    "title": "First hour after giving a password",
+    "prompt": "You accidentally entered your main password on a look-alike fake website. Put these recovery steps in order:",
+    "steps": [
+      "Turn on two-factor authentication (an extra verification code) on your account.",
+      "Change the password on that account right now from an official, safe device.",
+      "Check your recent login history and sign out of all active sessions.",
+      "Update any other accounts that used the same or a similar password."
+    ],
+    "correctOrder": [1, 2, 0, 3],
+    "whyFirstStepMatters": "Changing your password immediately cuts off the scammer's access before they can lock you out by changing your recovery email or phone number.",
+    "explanation": "When a password is leaked, act fast to change it before the scammer takes over your account. Then sign out other sessions and secure other accounts that shared the password.",
+    "takeaways": [
+      "Change a compromised password immediately.",
+      "Never reuse the same password across multiple accounts."
+    ]
+  }
+]
