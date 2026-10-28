@@ -450,6 +450,7 @@ button, a {
 .site-footer p {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   color: var(--on-dark-muted);
@@ -2947,14 +2948,23 @@ html[data-text-size="xlarge"] {
   line-height: 1.5;
   color: var(--ink-secondary);
 }
+.site-footer a,
 .footer-links a {
-  color: var(--ink-secondary);
+  color: #ffffff;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   font-weight: 500;
 }
-.footer-links a:hover {
-  color: var(--ink);
+.site-footer a:visited,
+.footer-links a:visited {
+  color: #ffffff;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible,
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--sky-light);
+  text-decoration: underline;
 }
 @media print {
   .help-page { max-width: 100% !important; background: #fff !important; }
