@@ -61,7 +61,7 @@ export function OrderSteps({ scenario, onComplete }: Props) {
       {/* 1. Placed sequence slots */}
       <div className="order-slots-container" role="region" aria-label="Ordered steps list">
         <div className="order-slots-header">
-          <span className="order-slots-title">Your step order:</span>
+          <span className="order-slots-title">Your step order</span>
           {!checked && placed.length > 0 && (
             <button type="button" className="btn btn-quiet order-reset-btn" onClick={handleReset}>
               Clear order
@@ -113,7 +113,7 @@ export function OrderSteps({ scenario, onComplete }: Props) {
       {!checked && (
         <div className="order-pool" role="region" aria-label="Available steps to pick from">
           <p className="order-pool-title">
-            {unplacedIndices.length > 0 ? 'Tap each step in the order you would do it:' : 'All steps placed! Tap "Check order" below.'}
+            {unplacedIndices.length > 0 ? 'Tap each step in the order you would do it' : 'All steps placed! Tap "Check order" below.'}
           </p>
           <div className="order-pool-items">
             {unplacedIndices.map((stepIndex) => (

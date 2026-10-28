@@ -68,6 +68,7 @@ export function TextSizeControl() {
               role="menuitemradio"
               aria-checked={size === opt.id}
               className={`text-size-option${size === opt.id ? ' is-active' : ''}`}
+              data-track={`text-size/${opt.id}`}
               onClick={() => selectSize(opt.id)}
             >
               <span className="option-check" aria-hidden="true">

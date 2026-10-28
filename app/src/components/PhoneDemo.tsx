@@ -79,7 +79,7 @@ export function PhoneDemo() {
         </div>
       </PhoneFrame>
       {!checked ? (
-        <button type="button" className="btn btn-primary demo-action" onClick={check}>
+        <button type="button" className="btn btn-primary demo-action" onClick={check} data-track="home-demo-check">
           Check
         </button>
       ) : slide + 1 < flags.length ? (

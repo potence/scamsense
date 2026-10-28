@@ -6,6 +6,7 @@ import { saveProgress } from '../engine/storage.ts';
 import { ScenarioView } from '../components/ScenarioView.tsx';
 import { Feedback } from '../components/Feedback.tsx';
 import { Icon } from '../components/Icon.tsx';
+import { trackEvent } from '../engine/analytics.ts';
 import type { InteractionResult, Progress } from '../types.ts';
 
 interface TodayProps {
@@ -40,6 +41,7 @@ export function Today({ progress, onUpdateProgress }: TodayProps) {
       // Last question: today counts toward the streak.
       const next = completeDay(daily, today);
       saveDaily(next);
+      trackEvent(`today-done/streak-${next.streak}`);
       setDaily(next);
       setIndex(null);
     }

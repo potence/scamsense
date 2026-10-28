@@ -150,7 +150,7 @@ export function Group() {
       {revealed && <Answer s={s} />}
       <div className="actions">
         {!revealed ? (
-          <button type="button" className="btn btn-primary" onClick={() => setRevealed(true)}>
+          <button type="button" className="btn btn-primary" onClick={() => setRevealed(true)} data-track="group-reveal">
             Reveal
           </button>
         ) : (

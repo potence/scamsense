@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { LESSONS } from './lessonData.ts';
 import { lessonDone } from '../components/LessonList.tsx';
 import { Icon } from '../components/Icon.tsx';
+import { trackEvent } from '../engine/analytics.ts';
 import type { Progress } from '../types.ts';
 
 export function Certificate({ progress }: { progress: Progress }) {
@@ -13,7 +14,10 @@ export function Certificate({ progress }: { progress: Progress }) {
   });
 
   const completedCount = completedLessons.length;
-  const isComplete = completedCount === 12;
+  const isComplete = completedCount === LESSONS.length;
+  useEffect(() => {
+    if (isComplete) trackEvent('certificate-earned'); // never the typed name
+  }, [isComplete]);
 
   const todayDate = new Date().toLocaleDateString(undefined, {
     year: 'numeric',
@@ -35,14 +39,14 @@ export function Certificate({ progress }: { progress: Progress }) {
           <header className="page-head torn-bottom">
             <h1 id="cert-page-title">Certificate of Completion</h1>
             <p className="lede">
-              Complete all 12 lessons to earn your official printable ScamSense certificate.
+              Complete all {LESSONS.length} lessons to earn your official printable ScamSense certificate.
             </p>
           </header>
 
           <section className="panel" style={{ margin: '28px 0', padding: '28px' }}>
             <h2 style={{ fontSize: '22px', margin: '0 0 12px 0' }}>Your progress</h2>
             <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--navy)', margin: '0 0 12px 0' }}>
-              {completedCount} of 12 lessons completed
+              {completedCount} of {LESSONS.length} lessons completed
             </p>
 
             <div
@@ -50,7 +54,7 @@ export function Certificate({ progress }: { progress: Progress }) {
               role="progressbar"
               aria-valuenow={completedCount}
               aria-valuemin={0}
-              aria-valuemax={12}
+              aria-valuemax={LESSONS.length}
               aria-label="Lessons completed progress bar"
               style={{
                 width: '100%',
@@ -64,7 +68,7 @@ export function Certificate({ progress }: { progress: Progress }) {
               <div
                 className="cert-progress-bar-fill"
                 style={{
-                  width: `${(completedCount / 12) * 100}%`,
+                  width: `${(completedCount / LESSONS.length) * 100}%`,
                   height: '100%',
                   background: 'var(--cobalt)',
                   transition: 'width 0.4s ease',
@@ -101,9 +105,9 @@ export function Certificate({ progress }: { progress: Progress }) {
                       <strong style={{ color: finished ? 'var(--navy)' : 'var(--ink)' }}>{l.title}</strong>
                     </span>
                     {finished ? (
-                      <span style={{ fontSize: '14px', color: 'var(--green-spot)', fontWeight: 700 }}>Done</span>
+                      <span style={{ fontSize: '20px', color: 'var(--green-spot)', fontWeight: 700 }}>Done</span>
                     ) : (
-                      <a href={`#/lesson/${l.topic}`} className="btn btn-secondary" style={{ padding: '4px 12px', fontSize: '14px' }}>
+                      <a href={`#/lesson/${l.topic}`} className="btn btn-secondary" style={{ padding: '8px 18px', fontSize: '20px', minHeight: '52px' }}>
                         Start →
                       </a>
                     )}
@@ -118,13 +122,13 @@ export function Certificate({ progress }: { progress: Progress }) {
           <header className="page-head torn-bottom no-print">
             <h1 id="cert-page-title">Congratulations! You earned your certificate</h1>
             <p className="lede">
-              You have completed all 12 ScamSense lessons. Type your name below and print your certificate of completion.
+              You have completed all {LESSONS.length} ScamSense lessons. Type your name below and print your certificate of completion.
             </p>
           </header>
 
           <div className="panel no-print" style={{ margin: '24px 0', padding: '24px' }}>
-            <label htmlFor="recipient-name-input" className="stack-label" style={{ marginBottom: '8px', fontSize: '17px' }}>
-              Enter your name for the certificate:
+            <label htmlFor="recipient-name-input" className="stack-label" style={{ marginBottom: '8px', fontSize: '20px' }}>
+              Enter your name for the certificate
             </label>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
               <input
@@ -141,6 +145,7 @@ export function Certificate({ progress }: { progress: Progress }) {
                 type="button"
                 className="btn btn-primary"
                 onClick={() => window.print()}
+                data-track="print/certificate"
                 aria-label="Print certificate"
               >
                 Print certificate
@@ -164,7 +169,7 @@ export function Certificate({ progress }: { progress: Progress }) {
               <div className="cert-name-rule" />
 
               <p className="cert-description">
-                has successfully completed all 12 interactive scam awareness lessons and demonstrated practical mastery in spotting fraud, verifying requests, and taking safe protective action.
+                has successfully completed all {LESSONS.length} interactive scam awareness lessons and demonstrated practical mastery in spotting fraud, verifying requests, and taking safe protective action.
               </p>
 
               <div className="cert-skills-grid">

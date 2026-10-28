@@ -10,7 +10,9 @@ Anyone can use ScamSense directly in their web browser on any phone, tablet, or 
 
 **[Launch ScamSense Web App](https://potence.github.io/scamsense/)**
 - **Accessible:** Large text (22px+), audio narration, high contrast, and text zoom controls.
-- **Made for seniors:** Easy to use interactive lessons and quizzes
+- **Made for seniors:** Easy to use interactive lessons and quizzes.
+
+ScamSense counts visits anonymously (GoatCounter: no cookies, no names).
 
 ---
 
@@ -28,5 +30,5 @@ Anyone can use ScamSense directly in their web browser on any phone, tablet, or 
 - **Accessibility by Design:**
   - High-contrast, large-print typography (22px base body).
   - Integrated text-size controls (Standard 1×, Large 1.15×, Extra Large 1.3×).
-  - Tactile audio cues and built-in text-to-speech audio narration.
-  - Keyboard navigation and screen-reader support
+  - Tactile audio cues and recorded narration.
+  - Keyboard navigation and screen-reader support.

@@ -15,6 +15,7 @@ import { Feedback } from '../components/Feedback.tsx';
 import type { Tone } from '../components/Feedback.tsx';
 import { Icon } from '../components/Icon.tsx';
 import { Reveal } from '../components/Reveal.tsx';
+import { trackEvent } from '../engine/analytics.ts';
 import type { Progress } from '../types.ts';
 
 interface InboxProps {
@@ -291,6 +292,12 @@ export function Inbox({ progress, onUpdateProgress }: InboxProps) {
     setAnswers(nextAnswers);
 
     const result = judgeAnswer(value, view.answer);
+    trackEvent(`inbox/${view.id}/${result}`);
+    if (Object.keys(nextAnswers).length === round.length) {
+      const scamIdx = round.map((it, i) => ({ it, i })).filter(({ it }) => it.answer === 'scam');
+      const caughtAll = scamIdx.filter(({ i }) => judgeAnswer(nextAnswers[i], 'scam') === 'caught').length;
+      trackEvent(`inbox-done/${caughtAll}of${scamIdx.length}-scams-caught`);
+    }
     playSound(result === 'missed' ? 'miss' : result === 'careful' ? 'tap' : 'spotted');
 
     const updated = recordResult(progress, {

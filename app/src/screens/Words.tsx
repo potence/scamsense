@@ -181,7 +181,7 @@ export function Words() {
             </button>
           )}
         </div>
-        <p className="search-status" aria-live="polite" style={{ fontSize: '15px', color: 'var(--ink-secondary)', marginTop: '8px' }}>
+        <p className="search-status" aria-live="polite" style={{ fontSize: '20px', color: 'var(--ink-secondary)', marginTop: '8px' }}>
           Showing {filtered.length} of {GLOSSARY_TERMS.length} terms
         </p>
       </div>
@@ -202,12 +202,12 @@ export function Words() {
                 <h2 style={{ fontSize: '22px', margin: 0, color: 'var(--navy)' }}>{item.term}</h2>
                 <span className="word-category-badge">{CATEGORY_LABELS[item.category]}</span>
               </div>
-              <p className="word-definition" style={{ fontSize: '17px', lineHeight: 1.5, margin: '12px 0 16px 0', color: 'var(--ink)' }}>
+              <p className="word-definition" style={{ fontSize: '20px', lineHeight: 1.5, margin: '12px 0 16px 0', color: 'var(--ink)' }}>
                 {item.definition}
               </p>
               <div className="word-example-box">
-                <span className="example-label">Real-world example:</span>
-                <p style={{ margin: '4px 0 0 0', fontSize: '15px', color: 'var(--ink-secondary)' }}>{item.example}</p>
+                <span className="example-label">Real-world example</span>
+                <p style={{ margin: '4px 0 0 0', fontSize: '20px', color: 'var(--ink-secondary)' }}>{item.example}</p>
               </div>
             </article>
           ))}

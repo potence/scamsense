@@ -56,7 +56,7 @@ export function ReadAloud({ id, text, label = 'Read aloud' }: { id: string; text
         onEnded={() => setPlaying(false)}
       />
       {ready && (
-        <button type="button" className="read-aloud" onClick={toggle} aria-pressed={playing}>
+        <button type="button" className="read-aloud" onClick={toggle} aria-pressed={playing} data-track={playing ? undefined : `read-aloud/${id}`}>
           <Icon name={playing ? 'stop' : 'speaker'} />
           <span>{playing ? 'Stop reading' : label}</span>
         </button>

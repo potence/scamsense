@@ -45,7 +45,7 @@ export function TeachCard({ teach, onStart }: { teach: TeachContent; onStart: ()
         </dl>
       </section>
 
-      <button type="button" className="btn btn-primary" onClick={onStart}>
+      <button type="button" className="btn btn-primary" onClick={onStart} data-track={`lesson-start/${teach.topic}`}>
         Start the questions
         <Icon name="arrowRight" className="icon-forward" />
       </button>

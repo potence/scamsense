@@ -16,10 +16,10 @@ export function Learn({ progress }: { progress: Progress }) {
       </header>
 
       <div style={{ margin: '16px 0 20px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
-        <span style={{ fontSize: '15px', color: 'var(--ink-secondary)' }}>
+        <span style={{ fontSize: '20px', color: 'var(--ink-secondary)' }}>
           {completedCount} of 12 lessons completed
         </span>
-        <a href="#/certificate" style={{ fontSize: '15px', color: 'var(--cobalt)', fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+        <a href="#/certificate" style={{ fontSize: '20px', color: 'var(--navy)', fontWeight: 700, textDecoration: 'underline', textUnderlineOffset: '3px' }}>
           {completedCount === 12 ? '🎓 View completion certificate' : 'Completion certificate progress →'}
         </a>
       </div>
@@ -30,7 +30,7 @@ export function Learn({ progress }: { progress: Progress }) {
         <h2 id="glossary-prompt-title" style={{ fontSize: '22px', margin: '0 0 6px 0' }}>
           Confused by scam buzzwords?
         </h2>
-        <p style={{ margin: '0 0 16px 0', color: 'var(--ink-secondary)', fontSize: '16px' }}>
+        <p style={{ margin: '0 0 16px 0', color: 'var(--ink-secondary)', fontSize: '20px' }}>
           Words like phishing, smishing, quishing, and 2FA can sound like nonsense. Our plain-English dictionary explains all 15 common terms with clear examples.
         </p>
         <a href="#/words" className="btn btn-secondary" style={{ display: 'inline-flex' }}>

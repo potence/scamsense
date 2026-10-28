@@ -17,6 +17,7 @@ import type { IconName } from './components/Icon.tsx';
 import { TextSizeControl } from './components/TextSizeControl.tsx';
 import { loadProgress } from './engine/storage.ts';
 import { isSoundOn, setSoundOn } from './engine/sounds.ts';
+import { trackClicks, trackPage } from './engine/analytics.ts';
 import type { Progress } from './types.ts';
 
 // Hash routing: the page part lives after "#" (like #/lesson/phone), so it works
@@ -58,8 +59,15 @@ export default function App() {
       window.scrollTo(0, 0);
     };
     window.addEventListener('hashchange', onChange);
-    return () => window.removeEventListener('hashchange', onChange);
+    const stopClicks = trackClicks(); // buttons marked data-track="..." count as events
+    return () => {
+      window.removeEventListener('hashchange', onChange);
+      stopClicks();
+    };
   }, []);
+
+  // Each screen counts as a page view (anonymous; see engine/analytics.ts).
+  useEffect(() => trackPage(route), [route]);
 
   let page;
   if (route === '/learn') page = <Learn progress={progress} />;
@@ -112,6 +120,7 @@ export default function App() {
               type="button"
               className="sound-toggle"
               aria-pressed={sound}
+              data-track={`sound-${sound ? 'off' : 'on'}`}
               onClick={() => {
                 setSoundOn(!sound);
                 setSound(!sound);

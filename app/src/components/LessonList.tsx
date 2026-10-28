@@ -1,5 +1,5 @@
 // The list of lessons and how far the user is in each. Used on Home and Learn.
-// Clean editorial list: clear titles lead, no clutter.
+// Clean editorial list strictly aligned with CLAUDE-DESIGN.md: clear titles lead, no clutter.
 import { LESSONS } from '../screens/lessonData.ts';
 import { scenariosForLesson } from '../data/index.ts';
 import type { Progress } from '../types.ts';

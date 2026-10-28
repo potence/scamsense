@@ -68,21 +68,21 @@ export function HelpersHub() {
         <p style={{ color: 'var(--ink-secondary)', marginBottom: '16px' }}>
           You can install ScamSense on an iPhone, iPad, or Android phone so it opens full screen like a native app, without browser bars.
         </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '20px' }}>
           <div className="panel" style={{ background: 'var(--surface-secondary, #faf9f6)', padding: '16px 20px', borderRadius: 'var(--r)' }}>
-            <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>On iPhone or iPad (Safari)</h3>
-            <ol className="plain-list" style={{ fontSize: '15px', color: 'var(--ink)' }}>
-              <li style={{ margin: '8px 0' }}>1. Tap the <strong>Share</strong> button at the bottom of Safari (square with an up arrow).</li>
-              <li style={{ margin: '8px 0' }}>2. Scroll down and tap <strong>Add to Home Screen</strong>.</li>
-              <li style={{ margin: '8px 0' }}>3. Tap <strong>Add</strong> in the top-right corner.</li>
+            <h3 style={{ fontSize: '22px', color: 'var(--navy)', marginBottom: '8px' }}>On iPhone or iPad (Safari)</h3>
+            <ol className="plain-list" style={{ fontSize: '20px', color: 'var(--ink)' }}>
+              <li style={{ margin: '8px 0' }}>Tap the <strong>Share</strong> button at the bottom of Safari (square with an up arrow).</li>
+              <li style={{ margin: '8px 0' }}>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+              <li style={{ margin: '8px 0' }}>Tap <strong>Add</strong> in the top-right corner.</li>
             </ol>
           </div>
           <div className="panel" style={{ background: 'var(--surface-secondary, #faf9f6)', padding: '16px 20px', borderRadius: 'var(--r)' }}>
-            <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>On Android (Chrome)</h3>
-            <ol className="plain-list" style={{ fontSize: '15px', color: 'var(--ink)' }}>
-              <li style={{ margin: '8px 0' }}>1. Tap the <strong>three dots menu</strong> (⋮) in the top-right corner.</li>
-              <li style={{ margin: '8px 0' }}>2. Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
-              <li style={{ margin: '8px 0' }}>3. Tap <strong>Install</strong> to confirm.</li>
+            <h3 style={{ fontSize: '22px', color: 'var(--navy)', marginBottom: '8px' }}>On Android (Chrome)</h3>
+            <ol className="plain-list" style={{ fontSize: '20px', color: 'var(--ink)' }}>
+              <li style={{ margin: '8px 0' }}>Tap the <strong>three dots menu</strong> (⋮) in the top-right corner.</li>
+              <li style={{ margin: '8px 0' }}>Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+              <li style={{ margin: '8px 0' }}>Tap <strong>Install</strong> to confirm.</li>
             </ol>
           </div>
         </div>

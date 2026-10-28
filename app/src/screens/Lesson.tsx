@@ -8,6 +8,7 @@ import { Icon } from '../components/Icon.tsx';
 import { StepProgress } from '../components/StepProgress.tsx';
 import { recordResult } from '../engine/scoring.ts';
 import { saveProgress } from '../engine/storage.ts';
+import { trackEvent } from '../engine/analytics.ts';
 import type { InteractionResult, Progress } from '../types.ts';
 
 interface LessonProps {
@@ -44,7 +45,10 @@ export function Lesson({ topicId, progress, onUpdateProgress }: LessonProps) {
     saveProgress(updated);
     onUpdateProgress(updated);
     if (index + 1 < questions.length) setIndex(index + 1);
-    else setPhase('result');
+    else {
+      setPhase('result');
+      trackEvent(`lesson-done/${topicId}/${[...results, r].filter((x) => x.correct).length}of${questions.length}`);
+    }
     window.scrollTo(0, 0); // next question starts at the top, not mid-page
   };
 

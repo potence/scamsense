@@ -3,7 +3,7 @@
 
 function PrintButton() {
   return (
-    <button type="button" className="btn btn-primary no-print" onClick={() => window.print()}>
+    <button type="button" className="btn btn-primary no-print" onClick={() => window.print()} data-track={`print${window.location.hash.slice(1)}`}>
       Print this page
     </button>
   );

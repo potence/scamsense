@@ -8,6 +8,7 @@ import { ScenarioView } from '../components/ScenarioView.tsx';
 import { ResultCard } from '../components/ResultCard.tsx';
 import { Icon } from '../components/Icon.tsx';
 import { StepProgress } from '../components/StepProgress.tsx';
+import { trackEvent } from '../engine/analytics.ts';
 import type { InteractionResult, Progress, Scenario } from '../types.ts';
 
 const ROUND_SIZE = 5;
@@ -40,7 +41,10 @@ export function Practice({ progress, onUpdateProgress }: PracticeProps) {
     saveProgress(updated);
     onUpdateProgress(updated);
     if (index + 1 < round.length) setIndex(index + 1);
-    else setFinished(true);
+    else {
+      setFinished(true);
+      trackEvent(`practice-done/${[...results, r].filter((x) => x.correct).length}of${round.length}`);
+    }
     window.scrollTo(0, 0);
   };
 
