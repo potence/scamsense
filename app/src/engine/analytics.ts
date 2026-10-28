@@ -4,7 +4,7 @@
 // the app works exactly the same.
 
 // Your GoatCounter site code: for https://scamsense.goatcounter.com it is 'scamsense'.
-export const GOATCOUNTER_CODE = '';
+export const GOATCOUNTER_CODE = 'scamsense';
 
 interface Hit {
   path: string;
@@ -39,7 +39,19 @@ function send(hit: Hit): void {
     queue.push(hit);
     if (loading) return;
     loading = true;
-    window.goatcounter = { no_onload: true }; // we count hash routes ourselves
+    window.goatcounter = window.goatcounter || { no_onload: true }; // we count hash routes ourselves
+    const existing = document.querySelector<HTMLScriptElement>('script[data-goatcounter]');
+    if (existing) {
+      const prevOnload = existing.onload;
+      existing.onload = (e) => {
+        if (typeof prevOnload === 'function') (prevOnload as any).call(existing, e);
+        for (const h of queue.splice(0)) window.goatcounter?.count?.(h);
+      };
+      if (window.goatcounter?.count) {
+        for (const h of queue.splice(0)) window.goatcounter.count(h);
+      }
+      return;
+    }
     const script = document.createElement('script');
     script.async = true;
     script.src = 'https://gc.zgo.at/count.js';
